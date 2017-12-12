@@ -23,7 +23,7 @@ body {
 /* Titles */
 h1, h2, h3, h4, h5, h6 {
 
-    	font-family: "Raleway";
+    	font-family: "Imperial";
 
    	font-weight: 300;
 
@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 */
 p {
 
-    line-height: 28px;
+    line-height: 20px;
 
     margin-bottom: 25px;
 
