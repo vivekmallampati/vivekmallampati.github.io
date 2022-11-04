@@ -1,237 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
+vCard - Personal Portfolio
 
-  <head>
-    <meta charset="utf-8">
+# sidebar
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+alt = Richard hanrick
+Richard hanrick
+Web developer
 
-    <meta name="description" content="">
- 
-   <meta name="author" content="">
+Show Contacts
 
-    <link rel="shortcut icon" href="assets/ico/favicon.png">
+Email
+richard@example.com
 
- 
-   <title>Vivek Mallampati</title>
+Phone
++1 (213) 352-2795
 
- 
-   <!-- Bootstrap core CSS -->
-  
-  <link href="assets/css/bootstrap.css" rel="stylesheet">
+Birthday
+June 23, 1982
 
+Location
+Sacramento, California, USA
 
-    <!-- Custom styles for this template -->
- 
-   <link href="assets/css/main.css" rel="stylesheet">
- 
-   
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+# navbar
 
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+About
+Resume
+Portfolio
+Blog
+Contact
 
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
- 
-   
-    <script src="assets/js/jquery.min.js"></script>
-  
-  <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+# about
 
-    <script src="assets/js/Chart.js"></script>
+About me
 
-  
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  
-  <!--[if lt IE 9]>
-   
-   <script src="assets/js/html5shiv.js"></script>
- 
-     <script src="assets/js/respond.min.js"></script>
-  
-  <![endif]-->
- 
- </head>
+I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media. I enjoy turning complex problems into simple, beautiful and intuitive designs.
 
- 
+My job is to build your website so that it is functional and user-friendly but at the same time attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring across your message and identity in the most creative way. I created web design for many famous brand companies.
 
 
+## service
 
- <body data-spy="scroll" data-offset="0" data-target="#nav">
+What i'm doing
 
-	<div id="section-topbar">
-		<div id="topbar-inner">
-			<div class="container">
-				<div class="row">
-					<div class="dropdown">
-						<ul id="nav" class="nav">
-							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
-							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
-						</ul><!--/ uL#nav -->
-					</div><!-- /.dropdown -->
+alt = design icon
+Web design
+The most modern and high-quality design made at a professional level.
 
-					<div class="clear"></div>
-				</div><!--/.row -->
-			</div><!--/.container -->
+alt = Web development icon
+Web development
+High-quality development of sites at the professional level.
 
-			<div class="clear"></div>
-		</div><!--/ #topbar-inner -->
-	</div><!--/ #section-topbar -->
-	
-	<div id="headerwrap">
-		<div class="container">
-			<div class="row centered">
-				<div class="col-lg-12">
-					<h1>Vivek Mallampati</h1>
-					<h3>Student | vivekm3@illinois.edu</h3>
-				</div><!--/.col-lg-12 -->
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/.#headerwrap -->
-	
+alt = mobile app icon
+Mobile apps
+Professional development of applications for iOS and Android.
 
-	<section id="about" name="about"></section>
-	<div id="intro">
-		<div class="container">
-			<div class="row">
-				
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>ABOUT</h5>
-				</div>
-				<div class="col-lg-6">
-					<p>I'm Vivek Mallampati.
- I am currently studying Computer science and Mathematics at the University of Illinois at Urbana-Champaign. 
-I have schooled till 10th grade in India and moved to USA in 2015. 
-				</div>
-				<div class="col-lg-3">
-					<p><a href="#"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
-				</div>
-				
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #intro -->
+alt = camera icon
+Photography
+I make high-quality photos of any category at a professional level.
 
 
-	<section id="resume" name="resume"></section>
-	<!--EDUCATION DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
+## testimonials
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>EDUCATION</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Bacholr of Science</t><br/>
-						University of Illinois Urbana Champaign <br/>
-						<i>4 Years Degree</i>
-						<i>Majoring in Math and Computer Science</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>GRADUATING IN MAY 2021</sm><br/>
-					<imp><sm>IN PROGRESS</sm></imp>
-					</p>
-				</div>
-	
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>High School Degree</t><br/>
-						West Morris Central High School <br/>
-						<i>IB diploma</i>
-					</p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>JUNE 2017</sm></p>
-				</div>
-	
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
-	
-	
-	<!--WORK DESCRIPTION -->
-	<div class="container desc">
-		<div class="row">
+Testimonials
 
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>WORK</h5>
-				</div>
-				
-	
-				<div class="col-lg-6">
-					<p><t>Math Tutor</t><br/>
-						KUMON Math and Reading Center <br/>
-					</p>
-					<p><more>Worked as a tutor teaching Math with students mainly in the elementry and middle school level.</more></p>
-				</div>
-				<div class="col-lg-3">
-					<p><sm>DECEMBER 2016 - MAY 2017</sm></p>
-				</div>
-				<div class="col-lg-6 col-lg-offset-3">
-					<p><t>Intern</t><br/>
-						SensorsCall.Inc <br/>
-					</p>
-					<p><more>I worked as an intern for developing 3D models for the sensors. 
-					The company was a startup so had great experiences talking to different people who helped me and the company to gather resources. 
-					</more></p>
-				</div>
-				<div class="col-lg-2">
-					<p><sm>JULY 2016 - SEPTEMBER 2016</sm></p>
-				</div>
-		</div><!--/.row -->
-		<br>
-		<hr>
-	</div><!--/.container -->
+alt = Daniel lewis
+Daniel lewis
+Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+
+alt = Jessica miller
+Jessica miller
+Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+
+alt = Emily evans
+Emily evans
+Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+
+alt = Henry william
+Henry william
+Richard was hired to create a corporate identity. We were very pleased with the work done. She has a lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
 
 
-	
-	<section id="contact" name="contact"></section>
-	<!--FOOTER DESCRIPTION -->
-	<div id="footwrap">
-		<div class="container">
-			<div class="row">
-			
-				<div class="col-lg-2 col-lg-offset-1">
-					<h5>CONTACT</h5>
-				</div>
-				<div class="col-lg-6">
-					<p><t>Email</t><br/>
-						vivekm3@illinois.edu<br/>
-					</p>
-					<p><t>Adress</t><br/>
-						409 E Chalmers St <br/>
-						Postal 61820<br/>
-						Champaign, IL. <br/>
-					</p>
-					
-				</div>
-				<div class="col-lg-3">
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<a href="#"><i class="icon-twitter"></i></a>
-						<a href="https://www.facebook.com/vivekm2000"><i class="icon-facebook"></i></a>
-						<a href="https://www.linkedin.com/in/vivek-m-9036a384/"><i class="icon-linkedin"></i></a>
-						<a href="#"><i class="icon-apple"></i></a>
+## clients
 
-					</p>
-				</div>
-			</div><!--/.row -->
-		</div><!--/.container -->
-	</div><!--/ #footer -->
-	
-	<div id="c">
-		<div class="container">
-			<p>Created by <a href="http://www.blacktie.co">BLACKTIE.CO</a></p>
-		
-		</div>
-	</div>
-	
+Clients
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="assets/js/bootstrap.js"></script>
-  </body>
-</html>
+alt = client logo
+
+
+
+# resume
+
+Resume
+
+Education
+
+University school of the arts
+2007 — 2008
+Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+
+New york academy of art
+2006 — 2007
+Ratione voluptatem sequi nesciunt, facere quisquams facere menda ossimus, omnis voluptas assumenda est omnis..
+
+High school of art and design
+2002 — 2004
+Duis aute irure dolor in reprehenderit in voluptate, quila voluptas mag odit aut fugit, sed consequuntur magni dolores eos.
+
+Experience
+
+Creative director
+2015 — Present
+Nemo enim ipsam voluptatem blanditiis praesentium voluptum delenit atque corrupti, quos dolores et qvuas molestias exceptur.
+
+Art director
+2013 — 2015
+Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+
+Web designer
+2010 — 2013
+Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et quas molestias exceptur.
+
+My skills
+
+Web design
+80%
+Graphic design
+70%
+Branding
+90%
+WordPress
+50%
+
+
+
+# portfolio
+
+Portfolio
+
+All
+Web design
+Applications
+Web development
+
+Select category
+All
+Web design
+Applications
+Web development
+
+alt = finance
+Finance
+Web development
+
+alt = orizon
+Orizon
+Web development
+
+alt = fundo
+Fundo
+Web design
+
+alt = brawlhalla
+Brawlhalla
+Applications
+
+alt = dsm.
+DSM.
+Web design
+
+alt = metaspark
+MetaSpark
+Web design
+
+alt = summary
+Summary
+Web development
+
+alt = task manager
+Task Manager
+Applications
+
+alt = arrival
+Arrival
+Web development
+
+
+
+# blog
+
+Blog
+
+alt = Design conferences in 2022
+Design
+Fab 23, 2022
+Design conferences in 2022
+Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+
+alt = Best fonts every designer
+Design
+Fab 23, 2022
+Best fonts every designer
+Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+
+alt = Design digest #80
+Design
+Fab 23, 2022
+Design digest #80
+Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+
+alt = UI interactions of the week
+Design
+Fab 23, 2022
+UI interactions of the week
+Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+
+alt = The forgotten art of spacing
+Design
+Fab 23, 2022
+The Forgotten Art Of Spacing
+Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+alt = Design digest #79
+Design
+Fab 23, 2022
+Design Digest #79
+Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+
+
+
+# contact
+
+Contact
+
+Contact Form
+
+Full name
+Email address
+Your Message
+
+Send Message
