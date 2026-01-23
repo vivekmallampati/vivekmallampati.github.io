@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theme Preview - Vivek Mallampati</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/themes.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+  <style>
+    .theme-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: var(--spacing-lg);
+      margin: var(--spacing-xl) 0;
+    }
+    
+    .theme-card {
+      background: var(--color-bg-secondary);
+      border: 2px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-lg);
+      cursor: pointer;
+      transition: var(--transition-base);
+      position: relative;
+    }
+    
+    .theme-card:hover {
+      border-color: var(--color-accent-primary);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .theme-card.active {
+      border-color: var(--color-accent-primary);
+      border-width: 3px;
+    }
+    
+    .theme-preview-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .theme-name {
+      font-size: var(--font-size-xl);
+      font-weight: var(--font-weight-semibold);
+      color: var(--color-text-primary);
+    }
+    
+    .theme-colors {
+      display: flex;
+      gap: var(--spacing-xs);
+      margin-top: var(--spacing-sm);
+    }
+    
+    .color-swatch {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      border: 2px solid var(--color-border);
+    }
+    
+    .theme-demo {
+      margin-top: var(--spacing-md);
+      padding: var(--spacing-md);
+      background: var(--color-bg-primary);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-border);
+    }
+    
+    .theme-demo-button {
+      background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+      color: var(--color-text-primary);
+      padding: var(--spacing-sm) var(--spacing-md);
+      border-radius: var(--radius-md);
+      display: inline-block;
+      margin-top: var(--spacing-sm);
+      font-weight: var(--font-weight-medium);
+    }
+    
+    .theme-demo-link {
+      color: var(--color-accent-primary);
+      text-decoration: underline;
+      margin-top: var(--spacing-sm);
+      display: inline-block;
+    }
+    
+    .apply-theme-btn {
+      position: absolute;
+      top: var(--spacing-md);
+      right: var(--spacing-md);
+      background: var(--color-accent-primary);
+      color: var(--color-text-primary);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+      opacity: 0;
+      transition: var(--transition-base);
+      pointer-events: none;
+    }
+    
+    .theme-card:hover .apply-theme-btn {
+      opacity: 1;
+      pointer-events: all;
+    }
+    
+    .current-theme-badge {
+      position: absolute;
+      top: var(--spacing-md);
+      right: var(--spacing-md);
+      background: var(--color-accent-primary);
+      color: var(--color-text-primary);
+      padding: var(--spacing-xs) var(--spacing-sm);
+      border-radius: var(--radius-sm);
+      font-size: var(--font-size-sm);
+      font-weight: var(--font-weight-medium);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
+        <span>Vivek Mallampati</span>
+      </a>
+      
+      <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height);">
+    <!-- Page Header -->
+    <section class="section page-header-gradient">
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: var(--spacing-md);">Color Theme Preview</h1>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">
+          Click on any theme card to preview it. The theme will be applied to this page so you can see how it looks.
+        </p>
+        <p class="text-center" style="margin-top: var(--spacing-md); color: var(--color-accent-primary);">
+          <strong>Current Theme: <span id="currentTheme">Blue</span></strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- Theme Preview Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="theme-preview-grid">
+          <!-- Theme 1: Blue -->
+          <div class="theme-card" data-theme="blue" onclick="applyTheme('blue')">
+            <div class="current-theme-badge" id="badge-blue" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Blue (Current)</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #00d4ff;"></div>
+                  <div class="color-swatch" style="background: #0099cc;"></div>
+                  <div class="color-swatch" style="background: #ffd700;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Modern and professional. Great for tech/robotics portfolios.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 2: Purple -->
+          <div class="theme-card" data-theme="purple" onclick="applyTheme('purple')">
+            <div class="current-theme-badge" id="badge-purple" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Purple</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #a855f7;"></div>
+                  <div class="color-swatch" style="background: #9333ea;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Creative and innovative. Perfect for research portfolios.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 3: Green -->
+          <div class="theme-card" data-theme="green" onclick="applyTheme('green')">
+            <div class="current-theme-badge" id="badge-green" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Green</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #10b981;"></div>
+                  <div class="color-swatch" style="background: #059669;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Fresh and energetic. Great for academic portfolios.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 4: Orange -->
+          <div class="theme-card" data-theme="orange" onclick="applyTheme('orange')">
+            <div class="current-theme-badge" id="badge-orange" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Orange</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #f97316;"></div>
+                  <div class="color-swatch" style="background: #ea580c;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Warm and inviting. Bold and confident.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 5: Red -->
+          <div class="theme-card" data-theme="red" onclick="applyTheme('red')">
+            <div class="current-theme-badge" id="badge-red" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Red</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #ef4444;"></div>
+                  <div class="color-swatch" style="background: #dc2626;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Bold and passionate. Makes a strong statement.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 6: Teal -->
+          <div class="theme-card" data-theme="teal" onclick="applyTheme('teal')">
+            <div class="current-theme-badge" id="badge-teal" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Teal</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #14b8a6;"></div>
+                  <div class="color-swatch" style="background: #0d9488;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Calm and professional. Great balance of modern and classic.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 7: Indigo -->
+          <div class="theme-card" data-theme="indigo" onclick="applyTheme('indigo')">
+            <div class="current-theme-badge" id="badge-indigo" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Indigo</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #6366f1;"></div>
+                  <div class="color-swatch" style="background: #4f46e5;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Deep and sophisticated. Professional and trustworthy.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 8: Emerald -->
+          <div class="theme-card" data-theme="emerald" onclick="applyTheme('emerald')">
+            <div class="current-theme-badge" id="badge-emerald" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Emerald</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #34d399;"></div>
+                  <div class="color-swatch" style="background: #10b981;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Vibrant and fresh. Modern and energetic.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 9: Rose -->
+          <div class="theme-card" data-theme="rose" onclick="applyTheme('rose')">
+            <div class="current-theme-badge" id="badge-rose" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Rose</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #f43f5e;"></div>
+                  <div class="color-swatch" style="background: #e11d48;"></div>
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Elegant and modern. Sophisticated and warm.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+
+          <!-- Theme 10: Amber -->
+          <div class="theme-card" data-theme="amber" onclick="applyTheme('amber')">
+            <div class="current-theme-badge" id="badge-amber" style="display: none;">Current</div>
+            <div class="theme-preview-header">
+              <div>
+                <div class="theme-name">Amber</div>
+                <div class="theme-colors">
+                  <div class="color-swatch" style="background: #fbbf24;"></div>
+                  <div class="color-swatch" style="background: #f59e0b;"></div>
+                  <div class="color-swatch" style="background: #10b981;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="theme-demo">
+              <p style="color: var(--color-text-secondary);">Bright and optimistic. Energetic and creative.</p>
+              <div class="theme-demo-button">Sample Button</div>
+              <a href="#" class="theme-demo-link">Sample Link</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="card" style="max-width: 800px; margin: var(--spacing-xl) auto 0; text-align: center;">
+          <h2 style="margin-bottom: var(--spacing-md);">How to Apply a Theme</h2>
+          <p style="margin-bottom: var(--spacing-md); color: var(--color-text-secondary);">
+            Click on any theme card above to preview it. Once you've decided on a theme:
+          </p>
+          <ol style="text-align: left; max-width: 600px; margin: 0 auto; color: var(--color-text-secondary);">
+            <li style="margin-bottom: var(--spacing-sm);">Note the theme name (e.g., "purple", "green", "indigo")</li>
+            <li style="margin-bottom: var(--spacing-sm);">Open each HTML file (index.html, about.html, research.html, etc.)</li>
+            <li style="margin-bottom: var(--spacing-sm);">Find the <code style="background: var(--color-bg-tertiary); padding: 2px 6px; border-radius: 4px;">&lt;html&gt;</code> tag at the top</li>
+            <li style="margin-bottom: var(--spacing-sm);">Change the class from <code style="background: var(--color-bg-tertiary); padding: 2px 6px; border-radius: 4px;">class="theme-blue"</code> to your chosen theme, e.g., <code style="background: var(--color-bg-tertiary); padding: 2px 6px; border-radius: 4px;">class="theme-purple"</code></li>
+            <li>Save all files and refresh your browser</li>
+          </ol>
+          <p style="margin-top: var(--spacing-lg); font-size: var(--font-size-sm); color: var(--color-text-muted);">
+            Or use the JavaScript function below to apply themes programmatically.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-content">
+        &copy; 2025 Vivek Mallampati. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+  <script>
+    // Theme application function
+    function applyTheme(themeName) {
+      // Remove all theme classes
+      document.documentElement.classList.remove(
+        'theme-blue', 'theme-purple', 'theme-green', 'theme-orange', 
+        'theme-red', 'theme-teal', 'theme-indigo', 'theme-emerald', 
+        'theme-rose', 'theme-amber'
+      );
+      
+      // Add selected theme class
+      document.documentElement.classList.add('theme-' + themeName);
+      
+      // Update current theme indicator
+      document.getElementById('currentTheme').textContent = 
+        themeName.charAt(0).toUpperCase() + themeName.slice(1);
+      
+      // Hide all badges
+      document.querySelectorAll('.current-theme-badge').forEach(badge => {
+        badge.style.display = 'none';
+      });
+      
+      // Show badge for current theme
+      const badge = document.getElementById('badge-' + themeName);
+      if (badge) badge.style.display = 'block';
+      
+      // Update card active states
+      document.querySelectorAll('.theme-card').forEach(card => {
+        card.classList.remove('active');
+      });
+      document.querySelector(`[data-theme="${themeName}"]`).classList.add('active');
+    }
+    
+    // Initialize - show current theme
+    document.addEventListener('DOMContentLoaded', function() {
+      const currentTheme = document.documentElement.classList[0] || 'theme-blue';
+      const themeName = currentTheme.replace('theme-', '');
+      applyTheme(themeName);
+    });
+  </script>
+</body>
+</html>

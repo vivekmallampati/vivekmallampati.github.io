@@ -1,0 +1,191 @@
+/*-----------------------------------*\
+  #THEMES.CSS - Color Scheme Options
+\*-----------------------------------*/
+
+/**
+ * To switch themes, change the class on the <html> tag in each HTML file
+ * Options: theme-blue (default), theme-purple, theme-green, theme-orange, theme-red, theme-teal
+ * 
+ * Example: <html lang="en" class="theme-purple">
+ */
+
+/*-----------------------------------*\
+  #THEME 1: BLUE (Current/Default)
+\*-----------------------------------*/
+:root,
+.theme-blue {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d2d2d;
+  --color-bg-tertiary: #3a3a3a;
+  --color-accent-primary: #00d4ff;
+  --color-accent-secondary: #0099cc;
+  --color-accent-highlight: #ffd700;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 153, 204, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 2: PURPLE
+\*-----------------------------------*/
+.theme-purple {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d1f2d;
+  --color-bg-tertiary: #3a2a3a;
+  --color-accent-primary: #a855f7;
+  --color-accent-secondary: #9333ea;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 3: GREEN
+\*-----------------------------------*/
+.theme-green {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #1f2d1f;
+  --color-bg-tertiary: #2a3a2a;
+  --color-accent-primary: #10b981;
+  --color-accent-secondary: #059669;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(16, 185, 129, 0.1), rgba(5, 150, 105, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 4: ORANGE
+\*-----------------------------------*/
+.theme-orange {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d251f;
+  --color-bg-tertiary: #3a2f2a;
+  --color-accent-primary: #f97316;
+  --color-accent-secondary: #ea580c;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(249, 115, 22, 0.1), rgba(234, 88, 12, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(249, 115, 22, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 5: RED/PINK
+\*-----------------------------------*/
+.theme-red {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d1f1f;
+  --color-bg-tertiary: #3a2a2a;
+  --color-accent-primary: #ef4444;
+  --color-accent-secondary: #dc2626;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(239, 68, 68, 0.1), rgba(220, 38, 38, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(239, 68, 68, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 6: TEAL/CYAN
+\*-----------------------------------*/
+.theme-teal {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #1f2d2d;
+  --color-bg-tertiary: #2a3a3a;
+  --color-accent-primary: #14b8a6;
+  --color-accent-secondary: #0d9488;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(20, 184, 166, 0.1), rgba(13, 148, 136, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(20, 184, 166, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 7: INDIGO
+\*-----------------------------------*/
+.theme-indigo {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #1f1f2d;
+  --color-bg-tertiary: #2a2a3a;
+  --color-accent-primary: #6366f1;
+  --color-accent-secondary: #4f46e5;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(79, 70, 229, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(99, 102, 241, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 8: EMERALD
+\*-----------------------------------*/
+.theme-emerald {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #1f2d25;
+  --color-bg-tertiary: #2a3a2f;
+  --color-accent-primary: #34d399;
+  --color-accent-secondary: #10b981;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(52, 211, 153, 0.1), rgba(16, 185, 129, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(52, 211, 153, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 9: ROSE
+\*-----------------------------------*/
+.theme-rose {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d1f22;
+  --color-bg-tertiary: #3a2a2d;
+  --color-accent-primary: #f43f5e;
+  --color-accent-secondary: #e11d48;
+  --color-accent-highlight: #fbbf24;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(244, 63, 94, 0.1), rgba(225, 29, 72, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(244, 63, 94, 0.1), transparent 70%);
+}
+
+/*-----------------------------------*\
+  #THEME 10: AMBER/YELLOW
+\*-----------------------------------*/
+.theme-amber {
+  --color-bg-primary: #1a1a1a;
+  --color-bg-secondary: #2d281f;
+  --color-bg-tertiary: #3a332a;
+  --color-accent-primary: #fbbf24;
+  --color-accent-secondary: #f59e0b;
+  --color-accent-highlight: #10b981;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #e0e0e0;
+  --color-text-muted: #b0b0b0;
+  --color-border: #404040;
+  --gradient-hero: linear-gradient(135deg, rgba(251, 191, 36, 0.1), rgba(245, 158, 11, 0.1));
+  --gradient-hero-radial: radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.1), transparent 70%);
+}

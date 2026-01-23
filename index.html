@@ -1,640 +1,182 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" class="theme-blue">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vivek Mallampati - PhD Robotics @ OSU</title>
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/themes.css">
+  
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Vivek Mallampati">Vivek Mallampati</h1>
-
-          <p class="title">Graduate Student</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <href="mailto:vmallampati6@gatech.edu" class="contact-link">mallampv@oregonstate.edu</a>
-            </div>
-
-          </li>
-
-          <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <href="tel:+12133522795" class="contact-link">+1 (973) 723-2795</a>
-            </div>
-
-          </li> -->
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Date of Birth</p>
-
-              <time datetime="1982-06-23">Feburary 18, 2000</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Corvallis, OR, USA</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-          <ul class="social-list">
-
-            <li class="social-item">
-              <href="https://www.facebook.com/vivekm2000/" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <href="https://www.linkedin.com/in/vivek-mallampati/" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-
-            <li class="social-item">
-              <href="https://www.instagram.com/mallampativivek/" class="social-link">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a>
-            </li>
-          </ul>
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-          
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-
-        </ul>
-      </nav>
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Fall 2023, I started the Ph.D. in Robotics program at Oregon State University under the guidance of Prof <a href='https://engineering.oregonstate.edu/people/julie-adams'>Julie Adams</a>.
-
-            I was a graduate student in the School of Interactive Computing at Georgia Tech, pursuing an MS in Robotics. 
-            I currently do research in three spaces in <a href='https://star-lab.cc.gatech.edu/' class="social-link" >STAR Lab</a> with Prof <a href='https://harishravichandar.com/'>Harish Ravichandar</a>.
-            First, I worked on a project that learns trait preferences from expert demonstrations for multi-agent team formation. 
-            Second, I worked on creating StarCraft II expert demonstrations for a project that learns Gaussian processes from sub-optimal demonstrations and tries to find the best possible coalition using a given set of robots. 
-            Third, worked on a project that focused on understanding the concept of the trainability of agents in a decentralized market-based coalition formation framework.
-          </p> 
-          <p>
-            I graduated from the University of Illinois Urbana-Champaign with a Bachelor’s in Mathematics and Computer Science in May 2021. 
-            While there, I did research on developing robotic systems for a teleoperated nursing robot. 
-            I am interested in working on continuing my work with learning algorithms as well as in developing middleware for autonomous robotic systems.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-        <section class="service">
-
-          <h3 class="h3 service-title">Current projects</h3>
-
-          <ul class="service-list">
-            
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Adaptive Human-Machine Teaming</h4>
-
-                <p class="service-item-text">
-                  <b>Description</b>: Human teaming with machines requires systems that can understand and adapt to their human teammates. 
-                  This project incorporates objective metrics to determine the performance patterns of the human teammates (i.e., workload) 
-                  in real-time, predict near term human performance and use this information to adapt the machines’ interactions with the human teammates 
-                  or (re-)allocate tasks among the team members in order to improve the individual teammate’s or overall team’s performance when completing tasks. 
-                  The work relies on using objective metrics (i.e., heart rate variability, speech rate, noise level) to assess performance. 
-                  The current state of the art algorithm requires known tasks, but future efforts will focus on incorporating real-time task identification. 
-
-                  <b>Sponsors</b>: DARPA/NASA, AFOSR
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Past projects</h3>
-
-          <ul class="service-list">
-            
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Learning Trait Preferences for Task allocation</h4>
-
-                <p class="service-item-text">
-                    I develop algorithms to extract the underlying preferences from expert demonstrations. 
-                    I then use these inferred preferences to make multi-robot task allocation more effective. 
-                    Please check out the <href='https://star-lab.cc.gatech.edu/papers/mallampati_trait-preference/'>workshop paper</a> for more information about the project.
-
-                    <b>Sponsors</b>: ARL
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Decentralized MRTA accounting for Trainability of agents</h4>
-                <p class="service-item-text">
-                  I am improving the existing decentralized MRTA method by adding a feature to incorporate the feedback on agent trainability from the coalition level.                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">User Study setup</h4>
-                <p class="service-item-text">
-                  I am helping set up a StarCraft II user study to collect demonstrations for learning a gaussian process that will be used to improve the performance of task allocation.                
-                
-                  <b>Sponsors</b>: ARL
-
-                </p>
-              </div>
-            </li>
-
-            <li class="service-item">
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Personalized pose detection</h4>
-                <p class="service-item-text">
-                  I am extending existing algorithms to include a component that learns a personalized embedding for distinguishing heterogeneity from person-to-person differences for pose prediction.
-                </p>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-      <div class="modal-container" data-modal-container>
-
-        <div class="overlay" data-overlay></div>
-
-        <section class="testimonials-modal">
-
-          <button class="modal-close-btn" data-modal-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-
-          <div class="modal-img-wrapper">
-          </div>
-
-          <div class="modal-content">
-
-
-            <div data-modal-text>
-            
-            </div>
-
-          </div>
-
-        </section>
-
-      </div>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Oregon State University</h4>
-              <span>Corvallis, OR</span>
-              <span>September 2023 — May 2027(expected)</span>
-
-              <p class="timeline-text">
-                PhD Robotics
-              </p>
-              <p class="timeline-text">
-                Advised by Dr. Julie Adams
-              </p>             
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Georgia Institute of Technology</h4>
-              <span>Atlanta, GA</span>
-              <span>August 2021 — May 2023</span>
-
-              <p class="timeline-text">
-                MS Robotics
-              </p>
-              <p class="timeline-text">
-                Advised by Dr. Harish Ravichandar
-              </p>
-              <p class="timeline-text">
-                GPA: 4.0/4.0
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">University of Illinois Urbana Champaign</h4>
-              <span>Urbana, IL</span>
-              <span>August 2017 — May 2021</span>
-
-              <p class="timeline-text">
-                BS in Math and Computer Science
-              </p>
-              <p class="timeline-text">
-                GPA: 3.75/4.0
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">West Morris Central High School</h4>
-              <span>Long Valley, NJ</span>
-              <span>September 2015 — May 2017</span>
-
-              <p class="timeline-text">
-                International Baccalaureate (IB) Diploma Program (DP)
-              </p>
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Global Indian International School</h4>
-              <span>Hyderabad, India</span>
-              <span>September 2013 — May 2015</span>
-              <p class="timeline-text">
-                International General Certificate of Secondary Education (IGCSE) program
-              </p>
-            </li>
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3"> Work Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Development Engineering Intern </h4>
-              <h5 class="h5 timeline-item-title">Amazon Publisher Services – Virtual</h5>
-              <span>May 2020 – August 2020</span>
-              <p class="timeline-text">
-                I helped the APS Data team to migrate all six datasets from Hadoop to a new Micro-Batch infrastructure. 
-                I worked on creating a data validation system that helps increase the team's autonomy to innovate, leading to faster report delivery while increasing data completeness and freshness for all reports.
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Software Development Engineering Intern </h4>
-              <h5 class="h5 timeline-item-title">Amazon Publisher Services – Palo Alto, CA</h5>
-              <span>May 2019 – August 2019</span>
-              <p class="timeline-text">
-                I developed a new data loading system for the data infrastructure team of Amazon Publisher Service.
-                I have sucessfully migrated more than 50% of the legacy reports into the newly built AWS cloud-centered data loading system, enabling security
-                and retry features for error detection resulting in internal teams having 2X performance and 0% failure rate.
-              </p>
-            </li>
-          </ol>
-
-        </section>
-
-
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3"> Teaching Experience</h3>
-          </div>
-    
-          <ol class="timeline-list">
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h4>
-              <h5 class="h5 timeline-item-title">Georgia Institute of Technology, GA</h5>
-              <span>January 2023 – May 2023</span>
-              <p class="timeline-text">
-                I worked on creating coding assignment on HMM and MDPs from scratch with Prof <a href='https://core-robotics.gatech.edu/people/matthew-gombolay/'>Matthew Gombolay.</a>
-                I also built the auto-grader to test the students’ code extensively. Worked with other TAs to create quizes to test student's understanding. 
-                I weekly conduct office hours to help the students with questions on course content and assigments. 
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h4>
-              <h5 class="h5 timeline-item-title">Georgia Institute of Technology, GA</h5>
-              <span>August 2022 – December 2022</span>
-              <p class="timeline-text">
-                I worked on creating coding assignment on HMM and MDPs with Prof <a href='https://dellaert.github.io/'>Frank Daellert.</a>
-                I also built the auto-grader to test the students’ code extensively. 
-                I weekly conduct office hours to help the students with questions on course content and assigments. 
-              </p>
-            </li>
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h4>
-              <h5 class="h5 timeline-item-title">Georgia Institute of Technology, GA</h5>
-              <span>January 2022 – May 2022</span>
-              <p class="timeline-text">
-                I worked on creating coding assignment on HMM and MDPs from scratch with Prof <a href='https://dellaert.github.io/'>Frank Daellert.</a>I also built the auto-grader to test the students’ code extensively. 
-                I also got a chance to work with Prof <a href='https://faculty.cc.gatech.edu/~seth/'>Seth Hutschinson</a> on creating quizes to test student's understanding. 
-                I weekly conduct office hours to help the students with questions on course content and assigments. 
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">CS 125: Introduction to CS, Course Assistant </h4>
-              <h5 class="h5 timeline-item-title">University of Illinois at Urbana-Champaign – Urbana, IL</h5>
-              <span>January 2018 – May 2018</span>
-              <p class="timeline-text">
-                I supported Teaching Assistants with the lab and assisted students in learning and understanding the course content. 
-                I have conducted office hours to help students with the coding assignments
-              </p>
-            </li>
-          </ol>
-
-        </section>
-
-
-
-        <!-- <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4046.198401225266!2d-84.39589270454945!3d33.776717707096545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87b781ec0ab42ea5%3A0x16eec927f37b40ec!2sKlaus%20Advanced%20Computing%20Building!5e0!3m2!1sen!2sus!4v1667857612098!5m2!1sen!2sus" 
-            width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-
-      <div class="filter-select-box">
-
-        <button class="filter-select" data-select>
-
-          <div class="select-value" data-selecct-value>Select category</div>
-
-          <div class="select-icon">
-            <ion-icon name="chevron-down"></ion-icon>
-          </div>
-
-        </button>
-
-      </div>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
+  
+  <!-- Ion Icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
+        <span>Vivek Mallampati</span>
+      </a>
+      
+      <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
 
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height);">
+    <!-- Hero Section -->
+    <section class="hero page-header-gradient">
+      <div class="hero-content">
+        <h1 class="hero-title">Vivek Mallampati</h1>
+        <p class="hero-subtitle">PhD Student in Robotics</p>
+        <p class="hero-description">
+          Graduate student at Oregon State University researching Adaptive Human-Machine Teaming 
+          and Multi-Robot Task Allocation. Passionate about developing intelligent systems that 
+          work seamlessly with humans.
+        </p>
+        <div class="hero-actions">
+          <a href="about.html" class="btn btn-primary">Learn More</a>
+          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">About Me</h2>
+        <div class="card" style="max-width: 800px; margin: 0 auto;">
+          <p>
+            Fall 2023, I started the Ph.D. in Robotics program at Oregon State University under 
+            the guidance of <a href="https://engineering.oregonstate.edu/people/julie-adams" 
+            style="color: var(--color-accent-primary);">Prof Julie Adams</a>.
+          </p>
+          <p>
+            I was a graduate student in the School of Interactive Computing at Georgia Tech, 
+            pursuing an MS in Robotics. I currently do research in three spaces in 
+            <a href="https://star-lab.cc.gatech.edu/" style="color: var(--color-accent-primary);">STAR Lab</a> 
+            with <a href="https://harishravichandar.com/" style="color: var(--color-accent-primary);">Prof Harish Ravichandar</a>.
+          </p>
+          <p>
+            I graduated from the University of Illinois Urbana-Champaign with a Bachelor's in 
+            Mathematics and Computer Science in May 2021. I am interested in working on continuing 
+            my work with learning algorithms as well as in developing middleware for autonomous 
+            robotic systems.
+          </p>
+          <div style="margin-top: var(--spacing-lg);">
+            <a href="about.html" class="btn btn-secondary">Read Full Bio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Research Section -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">Featured Research</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3 class="card-title">Adaptive Human-Machine Teaming</h3>
+            <p class="card-content">
+              Developing systems that understand and adapt to human teammates using objective 
+              metrics to assess performance in real-time and improve team effectiveness.
+            </p>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">
+              <strong>Sponsors:</strong> DARPA/NASA, AFOSR
+            </p>
+            <a href="research.html" class="btn btn-outline" style="margin-top: var(--spacing-md);">
+              Learn More
+            </a>
+          </div>
+          
+          <div class="card">
+            <h3 class="card-title">Learning Trait Preferences</h3>
+            <p class="card-content">
+              Developing algorithms to extract underlying preferences from expert demonstrations 
+              for more effective multi-robot task allocation.
+            </p>
+            <p class="text-muted" style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">
+              <strong>Sponsors:</strong> ARL
+            </p>
+            <a href="research.html" class="btn btn-outline" style="margin-top: var(--spacing-md);">
+              Learn More
+            </a>
+          </div>
+        </div>
+          <div class="text-center" style="margin-top: var(--spacing-xl);">
+          <a href="research.html" class="btn btn-primary">View Research</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact CTA Section -->
+    <section class="section">
+      <div class="container">
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <h2 style="margin-bottom: var(--spacing-md);">Let's Connect</h2>
+          <p style="margin-bottom: var(--spacing-lg);">
+            Interested in collaboration, research opportunities, or just want to chat about robotics? 
+            I'd love to hear from you!
+          </p>
+          <div class="hero-actions">
+            <a href="contact.html" class="btn btn-primary">Contact Me</a>
+          </div>
+          <div class="social-links" style="margin-top: var(--spacing-lg);">
+            <a href="https://www.linkedin.com/in/vivek-mallampati/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://www.facebook.com/vivekm2000/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/mallampativivek/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="mailto:mallampv@oregonstate.edu" class="social-link" aria-label="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-content">
+        &copy; 2025 Vivek Mallampati. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
 </body>
-
 </html>

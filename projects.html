@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Vivek Mallampati</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/themes.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
+        <span>Vivek Mallampati</span>
+      </a>
+      
+      <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="projects.html" class="nav-link active">Projects</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height);">
+    <!-- Page Header -->
+    <section class="section page-header-gradient">
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: var(--spacing-md);">Projects</h1>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">
+          Software projects, coding assignments, and personal work
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-2" style="max-width: 1200px; margin: 0 auto;">
+          <!-- Project cards will be added here -->
+          <div class="card">
+            <h3 class="card-title">Project Title</h3>
+            <div class="card-content">
+              <p>
+                Project description will go here. This is a placeholder for your projects.
+                You can add details about technologies used, challenges faced, and outcomes.
+              </p>
+              <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                <span style="background: var(--color-bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: var(--font-size-sm);">
+                  Technology 1
+                </span>
+                <span style="background: var(--color-bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: var(--font-size-sm);">
+                  Technology 2
+                </span>
+              </div>
+              <div style="margin-top: var(--spacing-md);">
+                <a href="#" class="btn btn-outline" style="font-size: var(--font-size-sm);">
+                  <ion-icon name="logo-github"></ion-icon>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Project Title</h3>
+            <div class="card-content">
+              <p>
+                Project description will go here. This is a placeholder for your projects.
+                You can add details about technologies used, challenges faced, and outcomes.
+              </p>
+              <div style="margin-top: var(--spacing-md); display: flex; gap: var(--spacing-sm); flex-wrap: wrap;">
+                <span style="background: var(--color-bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: var(--font-size-sm);">
+                  Technology 1
+                </span>
+                <span style="background: var(--color-bg-tertiary); padding: var(--spacing-xs) var(--spacing-sm); border-radius: var(--radius-sm); font-size: var(--font-size-sm);">
+                  Technology 2
+                </span>
+              </div>
+              <div style="margin-top: var(--spacing-md);">
+                <a href="#" class="btn btn-outline" style="font-size: var(--font-size-sm);">
+                  <ion-icon name="logo-github"></ion-icon>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Note for adding projects -->
+        <div class="card" style="max-width: 800px; margin: var(--spacing-xl) auto 0; text-align: center;">
+          <h3 style="margin-bottom: var(--spacing-md);">Add Your Projects</h3>
+          <p style="margin-bottom: var(--spacing-md); color: var(--color-text-secondary);">
+            This page is ready for you to add your software projects, coding assignments, 
+            and personal work. Each project card can include a description, technologies used, 
+            and links to code repositories or live demos.
+          </p>
+          <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+            Edit <code style="background: var(--color-bg-tertiary); padding: 2px 6px; border-radius: 4px;">projects.html</code> to add your projects.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-content">
+        &copy; 2025 Vivek Mallampati. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research & Publications - Vivek Mallampati</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/themes.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
+        <span>Vivek Mallampati</span>
+      </a>
+      
+      <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="research.html" class="nav-link active">Research</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height);">
+    <!-- Page Header -->
+    <section class="section page-header-gradient">
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: var(--spacing-md);">Research & Publications</h1>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">
+          Exploring adaptive human-machine teaming and multi-robot task allocation
+        </p>
+      </div>
+    </section>
+
+    <!-- Current Projects -->
+    <section class="section">
+      <div class="container">
+        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Current Research</h2>
+        <div class="grid grid-1" style="max-width: 1000px; margin: 0 auto;">
+          <div class="card">
+            <h3 class="card-title">Adaptive Human-Machine Teaming</h3>
+            <div class="card-content">
+              <p>
+                <strong>Description:</strong> Human teaming with machines requires systems that can 
+                understand and adapt to their human teammates. This project incorporates objective 
+                metrics to determine the performance patterns of the human teammates (i.e., workload) 
+                in real-time, predict near term human performance and use this information to adapt 
+                the machines' interactions with the human teammates or (re-)allocate tasks among 
+                the team members in order to improve the individual teammate's or overall team's 
+                performance when completing tasks.
+              </p>
+              <p>
+                The work relies on using objective metrics (i.e., heart rate variability, speech rate, 
+                noise level) to assess performance. The current state of the art algorithm requires 
+                known tasks, but future efforts will focus on incorporating real-time task identification.
+              </p>
+              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> DARPA/NASA, AFOSR
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Projects -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Past Research</h2>
+        <div class="grid grid-2" style="max-width: 1200px; margin: 0 auto;">
+          <div class="card">
+            <h3 class="card-title">Learning Trait Preferences for Task Allocation</h3>
+            <div class="card-content">
+              <p>
+                I develop algorithms to extract the underlying preferences from expert demonstrations. 
+                I then use these inferred preferences to make multi-robot task allocation more effective.
+              </p>
+              <p style="margin-top: var(--spacing-sm);">
+                <a href="https://star-lab.cc.gatech.edu/papers/mallampati_trait-preference/" 
+                   style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
+                  <ion-icon name="document-text-outline" style="vertical-align: middle;"></ion-icon>
+                  Workshop Paper
+                </a>
+              </p>
+              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> ARL
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Decentralized MRTA accounting for Trainability of Agents</h3>
+            <div class="card-content">
+              <p>
+                I am improving the existing decentralized MRTA method by adding a feature to incorporate 
+                the feedback on agent trainability from the coalition level.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">User Study Setup</h3>
+            <div class="card-content">
+              <p>
+                I am helping set up a StarCraft II user study to collect demonstrations for learning 
+                a gaussian process that will be used to improve the performance of task allocation.
+              </p>
+              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> ARL
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Personalized Pose Detection</h3>
+            <div class="card-content">
+              <p>
+                I am extending existing algorithms to include a component that learns a personalized 
+                embedding for distinguishing heterogeneity from person-to-person differences for pose prediction.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section">
+      <div class="container">
+        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Publications</h2>
+        <div style="max-width: 900px; margin: 0 auto;">
+          <!-- Workshop Papers -->
+          <div style="margin-bottom: var(--spacing-xl);">
+            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
+              Workshop Papers
+            </h3>
+            <div class="card" style="margin-bottom: var(--spacing-md);">
+              <h4 style="margin-bottom: var(--spacing-sm);">Learning Trait Preferences for Task Allocation</h4>
+              <p style="margin-bottom: var(--spacing-sm); color: var(--color-text-secondary);">
+                <strong>Vivek Mallampati</strong> and Harish Ravichandar
+              </p>
+              <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                Workshop Paper
+              </p>
+              <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
+                <a href="https://star-lab.cc.gatech.edu/papers/mallampati_trait-preference/" 
+                   class="btn btn-outline" 
+                   target="_blank" 
+                   rel="noopener noreferrer"
+                   style="font-size: var(--font-size-sm);">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  Paper
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Journal Papers (Placeholder) -->
+          <div style="margin-bottom: var(--spacing-xl);">
+            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
+              Journal Papers
+            </h3>
+            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
+              <p class="text-muted">Journal publications will be listed here as they are published.</p>
+            </div>
+          </div>
+
+          <!-- Conference Papers (Placeholder) -->
+          <div style="margin-bottom: var(--spacing-xl);">
+            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
+              Conference Papers
+            </h3>
+            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
+              <p class="text-muted">Conference papers will be listed here as they are published.</p>
+            </div>
+          </div>
+
+          <!-- Preprints (Placeholder) -->
+          <div>
+            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
+              Preprints
+            </h3>
+            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
+              <p class="text-muted">Preprints will be listed here as they become available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Interests -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <h2 style="margin-bottom: var(--spacing-md);">Research Focus Areas</h2>
+          <div class="grid grid-2" style="gap: var(--spacing-md); text-align: left;">
+            <div>
+              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
+                <ion-icon name="people-outline" style="vertical-align: middle;"></ion-icon>
+                Human-Machine Collaboration
+              </h4>
+              <p style="font-size: var(--font-size-sm);">
+                Developing systems that seamlessly integrate human and machine capabilities
+              </p>
+            </div>
+            <div>
+              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
+                <ion-icon name="git-branch-outline" style="vertical-align: middle;"></ion-icon>
+                Multi-Robot Systems
+              </h4>
+              <p style="font-size: var(--font-size-sm);">
+                Optimizing task allocation and team formation for robotic swarms
+              </p>
+            </div>
+            <div>
+              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
+                <ion-icon name="school-outline" style="vertical-align: middle;"></ion-icon>
+                Learning from Demonstrations
+              </h4>
+              <p style="font-size: var(--font-size-sm);">
+                Extracting preferences and policies from expert demonstrations
+              </p>
+            </div>
+            <div>
+              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
+                <ion-icon name="hardware-chip-outline" style="vertical-align: middle;"></ion-icon>
+                Robotic Middleware
+              </h4>
+              <p style="font-size: var(--font-size-sm);">
+                Building infrastructure for autonomous robotic systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-content">
+        &copy; 2025 Vivek Mallampati. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>

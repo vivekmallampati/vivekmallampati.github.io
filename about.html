@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-blue">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Vivek Mallampati</title>
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/navigation.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
+  <link rel="stylesheet" href="./assets/css/themes.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Ion Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+  <!-- Header Navigation -->
+  <header class="header" id="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
+        <span>Vivek Mallampati</span>
+      </a>
+      
+      <nav>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link active">About</a></li>
+          <li><a href="research.html" class="nav-link">Research</a></li>
+          <li><a href="projects.html" class="nav-link">Projects</a></li>
+          <li><a href="resume.html" class="nav-link">Resume</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+  </header>
+
+  <!-- Main Content -->
+  <main style="margin-top: var(--header-height);">
+    <!-- Page Header -->
+    <section class="section page-header-gradient">
+      <div class="container">
+        <h1 class="text-center" style="margin-bottom: var(--spacing-md);">About Me</h1>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">
+          Learn more about my background, research interests, and journey in robotics
+        </p>
+      </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="section">
+      <div class="container">
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="grid grid-2" style="margin-bottom: var(--spacing-xl); gap: var(--spacing-xl);">
+            <div>
+              <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" 
+                   style="width: 100%; max-width: 300px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
+            </div>
+            <div>
+              <h2 style="margin-bottom: var(--spacing-md);">Vivek Mallampati</h2>
+              <p style="font-size: var(--font-size-lg); color: var(--color-accent-primary); margin-bottom: var(--spacing-md);">
+                PhD Student in Robotics
+              </p>
+              <p style="margin-bottom: var(--spacing-sm);">
+                <strong>Current Position:</strong> Oregon State University
+              </p>
+              <p style="margin-bottom: var(--spacing-sm);">
+                <strong>Advisor:</strong> <a href="https://engineering.oregonstate.edu/people/julie-adams" 
+                style="color: var(--color-accent-primary);">Dr. Julie Adams</a>
+              </p>
+              <p style="margin-bottom: var(--spacing-sm);">
+                <strong>Location:</strong> Corvallis, OR, USA
+              </p>
+              <p style="margin-bottom: var(--spacing-sm);">
+                <strong>Email:</strong> <a href="mailto:mallampv@oregonstate.edu" 
+                style="color: var(--color-accent-primary);">mallampv@oregonstate.edu</a>
+              </p>
+            </div>
+          </div>
+
+          <div class="card" style="margin-bottom: var(--spacing-xl);">
+            <h2 style="margin-bottom: var(--spacing-md);">Biography</h2>
+            <p>
+              Fall 2023, I started the Ph.D. in Robotics program at Oregon State University under 
+              the guidance of <a href="https://engineering.oregonstate.edu/people/julie-adams" 
+              style="color: var(--color-accent-primary);">Prof Julie Adams</a>.
+            </p>
+            <p>
+              I was a graduate student in the School of Interactive Computing at Georgia Tech, 
+              pursuing an MS in Robotics. I currently do research in three spaces in 
+              <a href="https://star-lab.cc.gatech.edu/" style="color: var(--color-accent-primary);">STAR Lab</a> 
+              with <a href="https://harishravichandar.com/" style="color: var(--color-accent-primary);">Prof Harish Ravichandar</a>. 
+              First, I worked on a project that learns trait preferences from expert demonstrations 
+              for multi-agent team formation. Second, I worked on creating StarCraft II expert 
+              demonstrations for a project that learns Gaussian processes from sub-optimal 
+              demonstrations and tries to find the best possible coalition using a given set of robots. 
+              Third, worked on a project that focused on understanding the concept of the trainability 
+              of agents in a decentralized market-based coalition formation framework.
+            </p>
+            <p>
+              I graduated from the University of Illinois Urbana-Champaign with a Bachelor's in 
+              Mathematics and Computer Science in May 2021. While there, I did research on developing 
+              robotic systems for a teleoperated nursing robot. I am interested in working on continuing 
+              my work with learning algorithms as well as in developing middleware for autonomous robotic systems.
+            </p>
+          </div>
+
+          <div class="card">
+            <h2 style="margin-bottom: var(--spacing-md);">Research Interests</h2>
+            <ul style="list-style: none; padding: 0;">
+              <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Adaptive Human-Machine Teaming:</strong> 
+                Developing systems that understand and adapt to human teammates
+              </li>
+              <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Multi-Robot Task Allocation:</strong> 
+                Learning from demonstrations and optimizing team formation
+              </li>
+              <li style="padding: var(--spacing-sm) 0; border-bottom: 1px solid var(--color-border);">
+                <strong style="color: var(--color-accent-primary);">Learning Algorithms:</strong> 
+                Preference learning, Gaussian processes, and reinforcement learning
+              </li>
+              <li style="padding: var(--spacing-sm) 0;">
+                <strong style="color: var(--color-accent-primary);">Robotic Systems:</strong> 
+                Middleware development for autonomous robotic systems
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Link to Resume -->
+    <section class="section" style="background: var(--color-bg-secondary);">
+      <div class="container">
+        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
+          <h2 style="margin-bottom: var(--spacing-md);">View Full Resume</h2>
+          <p style="margin-bottom: var(--spacing-lg);">
+            For detailed information about my education, work experience, and teaching background, 
+            please visit my resume page.
+          </p>
+          <a href="resume.html" class="btn btn-primary">View Resume</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-content">
+        &copy; 2025 Vivek Mallampati. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
