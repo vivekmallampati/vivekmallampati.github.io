@@ -1,298 +1,135 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-blue">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume - Vivek Mallampati</title>
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/navigation.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
-  <link rel="stylesheet" href="./assets/css/themes.css">
-  
-  <!-- Google Fonts -->
+  <title>Resume — Vivek Mallampati</title>
+  <meta name="description" content="Resume of Vivek Mallampati: education, industry internships, and teaching in robotics and computer science.">
+  <link rel="canonical" href="https://vivekmallampati.github.io/resume.html">
+  <meta property="og:title" content="Resume — Vivek Mallampati">
+  <meta property="og:description" content="Education, industry experience, and teaching.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vivekmallampati.github.io/resume.html">
+  <meta property="og:image" content="https://vivekmallampati.github.io/assets/images/portrait.png">
+  <meta name="theme-color" content="#f4f0e6">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Ion Icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <!-- Header Navigation -->
-  <header class="header" id="header">
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
-        <span>Vivek Mallampati</span>
-      </a>
-      
-      <nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="research.html" class="nav-link">Research</a></li>
-          <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="resume.html" class="nav-link active">Resume</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Vivek Mallampati</a>
+      <div class="nav-wrap">
+        <input class="menu-check" id="nav-toggle" type="checkbox">
+        <label class="menu-toggle" for="nav-toggle">Menu</label>
+        <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="resume.html" aria-current="page">Resume</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      </div>
     </div>
-    <div class="menu-overlay" id="menuOverlay"></div>
   </header>
 
-  <!-- Main Content -->
-  <main style="margin-top: var(--header-height);">
-    <!-- Page Header with Download Button -->
-    <section class="section page-header-gradient">
-      <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--spacing-md);">
+  <main id="main" class="page">
+    <header class="prose">
+      <p class="kicker">Resume</p>
+      <h1>Vivek Mallampati</h1>
+      <p class="facts">PhD student, Robotics, Oregon State University<br><a href="mailto:mallampv@oregonstate.edu">mallampv@oregonstate.edu</a> · Corvallis, Oregon</p>
+    </header>
+
+    <section class="block">
+      <h2>Education</h2>
+      <ol class="entries">
+        <li>
+          <p class="when">Sep 2023 — May 2027<br>expected</p>
           <div>
-            <h1 style="margin-bottom: var(--spacing-md);">Resume</h1>
-            <p class="text-muted" style="max-width: 600px;">
-              Education, experience, and academic background
-            </p>
+            <h3>Oregon State University</h3>
+            <p>PhD in Robotics, Corvallis, Oregon. Advised by Dr. Julie Adams.</p>
           </div>
+        </li>
+        <li>
+          <p class="when">Aug 2021 — May 2023</p>
           <div>
-            <!-- Download Resume Button -->
-            <!-- Update the href when you upload your PDF resume -->
-            <a href="./assets/resume/Vivek_Mallampati_Resume.pdf" 
-               class="btn btn-primary" 
-               download="Vivek_Mallampati_Resume.pdf"
-               style="display: inline-flex; align-items: center; gap: var(--spacing-xs);">
-              <ion-icon name="download-outline"></ion-icon>
-              Download PDF
-            </a>
+            <h3>Georgia Institute of Technology</h3>
+            <p>MS in Robotics, Atlanta, Georgia. Advised by Dr. Harish Ravichandar. GPA 4.0/4.0.</p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <p class="when">Aug 2017 — May 2021</p>
+          <div>
+            <h3>University of Illinois Urbana-Champaign</h3>
+            <p>BS in Mathematics and Computer Science, Urbana, Illinois. GPA 3.75/4.0.</p>
+          </div>
+        </li>
+      </ol>
+      <p class="note">Earlier: International Baccalaureate Diploma, West Morris Central High School, Long Valley, New Jersey, 2015–2017. IGCSE, Global Indian International School, Hyderabad, 2013–2015.</p>
     </section>
 
-    <!-- Resume Content -->
-    <section class="section">
-      <div class="container">
-        <div style="max-width: 1000px; margin: 0 auto;">
-          <!-- Education -->
-          <div style="margin-bottom: var(--spacing-2xl);">
-            <h2 style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
-              <ion-icon name="school-outline" style="color: var(--color-accent-primary);"></ion-icon>
-              Education
-            </h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">Oregon State University</h3>
-                <p class="timeline-item-meta">
-                  Corvallis, OR | September 2023 — May 2027 (expected)
-                </p>
-                <div class="timeline-item-content">
-                  <p><strong>PhD in Robotics</strong></p>
-                  <p>Advised by Dr. Julie Adams</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">Georgia Institute of Technology</h3>
-                <p class="timeline-item-meta">
-                  Atlanta, GA | August 2021 — May 2023
-                </p>
-                <div class="timeline-item-content">
-                  <p><strong>MS in Robotics</strong></p>
-                  <p>Advised by Dr. Harish Ravichandar</p>
-                  <p>GPA: 4.0/4.0</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">University of Illinois Urbana-Champaign</h3>
-                <p class="timeline-item-meta">
-                  Urbana, IL | August 2017 — May 2021
-                </p>
-                <div class="timeline-item-content">
-                  <p><strong>BS in Mathematics and Computer Science</strong></p>
-                  <p>GPA: 3.75/4.0</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">West Morris Central High School</h3>
-                <p class="timeline-item-meta">
-                  Long Valley, NJ | September 2015 — May 2017
-                </p>
-                <div class="timeline-item-content">
-                  <p>International Baccalaureate (IB) Diploma Program (DP)</p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">Global Indian International School</h3>
-                <p class="timeline-item-meta">
-                  Hyderabad, India | September 2013 — May 2015
-                </p>
-                <div class="timeline-item-content">
-                  <p>International General Certificate of Secondary Education (IGCSE) program</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Work Experience -->
-          <div style="margin-bottom: var(--spacing-2xl);">
-            <h2 style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
-              <ion-icon name="briefcase-outline" style="color: var(--color-accent-primary);"></ion-icon>
-              Work Experience
-            </h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">Software Development Engineering Intern</h3>
-                <p class="timeline-item-meta">
-                  Amazon Publisher Services – Virtual | May 2020 – August 2020
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I helped the APS Data team to migrate all six datasets from Hadoop to a new 
-                    Micro-Batch infrastructure. I worked on creating a data validation system 
-                    that helps increase the team's autonomy to innovate, leading to faster report 
-                    delivery while increasing data completeness and freshness for all reports.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">Software Development Engineering Intern</h3>
-                <p class="timeline-item-meta">
-                  Amazon Publisher Services – Palo Alto, CA | May 2019 – August 2019
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I developed a new data loading system for the data infrastructure team of 
-                    Amazon Publisher Service. I have successfully migrated more than 50% of the 
-                    legacy reports into the newly built AWS cloud-centered data loading system, 
-                    enabling security and retry features for error detection resulting in internal 
-                    teams having 2X performance and 0% failure rate.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Teaching Experience -->
+    <section class="block">
+      <h2>Industry</h2>
+      <ol class="entries">
+        <li>
+          <p class="when">May 2020 — Aug 2020</p>
           <div>
-            <h2 style="margin-bottom: var(--spacing-lg); display: flex; align-items: center; gap: var(--spacing-sm);">
-              <ion-icon name="people-outline" style="color: var(--color-accent-primary);"></ion-icon>
-              Teaching Experience
-            </h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h3>
-                <p class="timeline-item-meta">
-                  Georgia Institute of Technology, GA | January 2023 – May 2023
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I worked on creating coding assignment on HMM and MDPs from scratch with 
-                    <a href="https://core-robotics.gatech.edu/people/matthew-gombolay/" 
-                       style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
-                      Prof Matthew Gombolay
-                    </a>. I also built the auto-grader to test the students' code extensively. 
-                    Worked with other TAs to create quizzes to test student's understanding. 
-                    I weekly conduct office hours to help the students with questions on course 
-                    content and assignments.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h3>
-                <p class="timeline-item-meta">
-                  Georgia Institute of Technology, GA | August 2022 – December 2022
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I worked on creating coding assignment on HMM and MDPs with 
-                    <a href="https://dellaert.github.io/" 
-                       style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
-                      Prof Frank Dellaert
-                    </a>. I also built the auto-grader to test the students' code extensively. 
-                    I weekly conduct office hours to help the students with questions on course 
-                    content and assignments.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">CS 3630: Introduction to Perception and Robotics, Teaching Assistant</h3>
-                <p class="timeline-item-meta">
-                  Georgia Institute of Technology, GA | January 2022 – May 2022
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I worked on creating coding assignment on HMM and MDPs from scratch with 
-                    <a href="https://dellaert.github.io/" 
-                       style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
-                      Prof Frank Dellaert
-                    </a>. I also built the auto-grader to test the students' code extensively. 
-                    I also got a chance to work with 
-                    <a href="https://faculty.cc.gatech.edu/~seth/" 
-                       style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
-                      Prof Seth Hutchinson
-                    </a> on creating quizzes to test student's understanding. I weekly conduct 
-                    office hours to help the students with questions on course content and assignments.
-                  </p>
-                </div>
-              </div>
-
-              <div class="timeline-item">
-                <h3 class="timeline-item-title">CS 125: Introduction to CS, Course Assistant</h3>
-                <p class="timeline-item-meta">
-                  University of Illinois at Urbana-Champaign – Urbana, IL | January 2018 – May 2018
-                </p>
-                <div class="timeline-item-content">
-                  <p>
-                    I supported Teaching Assistants with the lab and assisted students in learning 
-                    and understanding the course content. I have conducted office hours to help 
-                    students with the coding assignments.
-                  </p>
-                </div>
-              </div>
-            </div>
+            <h3>Software Development Engineering Intern</h3>
+            <p>Amazon Publisher Services, virtual. Helped the APS Data team migrate six datasets from Hadoop onto a micro-batch infrastructure, and built a data validation system so the team could ship reports with more complete and more recent data.</p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <p class="when">May 2019 — Aug 2019</p>
+          <div>
+            <h3>Software Development Engineering Intern</h3>
+            <p>Amazon Publisher Services, Palo Alto, California. Built a data-loading system for the data infrastructure team and migrated more than half of the legacy reports onto an AWS loading path with retries and error detection. Internal teams saw about twice the performance and no failed loads on the migrated reports.</p>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <!-- Contact CTA -->
-    <section class="section" style="background: var(--color-bg-secondary);">
-      <div class="container">
-        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
-          <h2 style="margin-bottom: var(--spacing-md);">Interested in Collaboration?</h2>
-          <p style="margin-bottom: var(--spacing-lg);">
-            Feel free to reach out if you'd like to discuss research opportunities, 
-            collaborations, or have any questions.
-          </p>
-          <a href="contact.html" class="btn btn-primary">Contact Me</a>
-        </div>
-      </div>
+    <section class="block">
+      <h2>Teaching</h2>
+      <ol class="entries">
+        <li>
+          <p class="when">Jan 2023 — May 2023</p>
+          <div>
+            <h3>Teaching Assistant, CS 3630</h3>
+            <p>Introduction to Perception and Robotics, Georgia Tech, with <a href="https://core-robotics.gatech.edu/people/matthew-gombolay/">Prof. Matthew Gombolay</a>. Wrote a coding assignment on HMMs and MDPs, built the autograder, wrote quizzes with the other teaching assistants, and held weekly office hours.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when">Aug 2022 — Dec 2022</p>
+          <div>
+            <h3>Teaching Assistant, CS 3630</h3>
+            <p>Georgia Tech, with <a href="https://dellaert.github.io/">Prof. Frank Dellaert</a>. Wrote the HMM and MDP coding assignment, built the autograder, and held weekly office hours.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when">Jan 2022 — May 2022</p>
+          <div>
+            <h3>Teaching Assistant, CS 3630</h3>
+            <p>Georgia Tech, with <a href="https://dellaert.github.io/">Prof. Frank Dellaert</a> and <a href="https://faculty.cc.gatech.edu/~seth/">Prof. Seth Hutchinson</a>. Wrote the HMM and MDP assignment and its autograder, helped write quizzes, and held weekly office hours.</p>
+          </div>
+        </li>
+        <li>
+          <p class="when">Jan 2018 — May 2018</p>
+          <div>
+            <h3>Course Assistant, CS 125</h3>
+            <p>Introduction to Computer Science, University of Illinois Urbana-Champaign. Supported lab sections and held office hours for the coding assignments.</p>
+          </div>
+        </li>
+      </ol>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-content">
-        &copy; 2025 Vivek Mallampati. All rights reserved.
-      </p>
-    </div>
+  <footer class="site-footer">
+    <span>© 2026 Vivek Mallampati</span>
+    <a href="mailto:mallampv@oregonstate.edu">mallampv@oregonstate.edu</a>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="./assets/js/main.js"></script>
 </body>
 </html>

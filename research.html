@@ -1,280 +1,140 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-blue">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Research & Publications - Vivek Mallampati</title>
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/navigation.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
-  <link rel="stylesheet" href="./assets/css/themes.css">
-  
-  <!-- Google Fonts -->
+  <title>Research — Vivek Mallampati</title>
+  <meta name="description" content="Research and publications by Vivek Mallampati on adaptive human-machine teaming and multi-robot task allocation.">
+  <link rel="canonical" href="https://vivekmallampati.github.io/research.html">
+  <meta property="og:title" content="Research — Vivek Mallampati">
+  <meta property="og:description" content="Adaptive human-machine teaming, multi-robot task allocation, and publications.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vivekmallampati.github.io/research.html">
+  <meta property="og:image" content="https://vivekmallampati.github.io/assets/images/portrait.png">
+  <meta name="theme-color" content="#f4f0e6">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Ion Icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <!-- Header Navigation -->
-  <header class="header" id="header">
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
-        <span>Vivek Mallampati</span>
-      </a>
-      
-      <nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="research.html" class="nav-link active">Research</a></li>
-          <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Vivek Mallampati</a>
+      <div class="nav-wrap">
+        <input class="menu-check" id="nav-toggle" type="checkbox">
+        <label class="menu-toggle" for="nav-toggle">Menu</label>
+        <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html" aria-current="page">Research</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      </div>
     </div>
-    <div class="menu-overlay" id="menuOverlay"></div>
   </header>
 
-  <!-- Main Content -->
-  <main style="margin-top: var(--header-height);">
-    <!-- Page Header -->
-    <section class="section page-header-gradient">
-      <div class="container">
-        <h1 class="text-center" style="margin-bottom: var(--spacing-md);">Research & Publications</h1>
-        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto;">
-          Exploring adaptive human-machine teaming and multi-robot task allocation
-        </p>
-      </div>
+  <main id="main" class="page">
+    <header class="prose">
+      <p class="kicker">Research</p>
+      <h1>Research</h1>
+      <p class="lede">Adaptive human-machine teaming, and how heterogeneous robots should split a task.</p>
+    </header>
+
+    <section class="block prose">
+      <h2>Current</h2>
+      <h3>Adaptive human-machine teaming</h3>
+      <p>A machine teammate has to notice when a person is overloaded and change what it does. This project uses objective measures — heart-rate variability, speech rate, noise level — to estimate workload as the task is happening, predict performance in the near term, and then adapt the machine’s interaction or reallocate tasks across the team.</p>
+      <p>The current algorithms assume the task is known. The next step is to identify the task while it is underway. Sponsors: DARPA/NASA and AFOSR.</p>
+      <p>Related paper: <a href="https://doi.org/10.1145/3610978.3640598">Design Principles for Building Robust Human-Robot Interaction Machine Learning Models</a>, HRI 2024 companion, with Josh Bhagat Smith, Prakash Baskaran, Mark-Robin Giolando, and Julie A. Adams.</p>
     </section>
 
-    <!-- Current Projects -->
-    <section class="section">
-      <div class="container">
-        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Current Research</h2>
-        <div class="grid grid-1" style="max-width: 1000px; margin: 0 auto;">
-          <div class="card">
-            <h3 class="card-title">Adaptive Human-Machine Teaming</h3>
-            <div class="card-content">
-              <p>
-                <strong>Description:</strong> Human teaming with machines requires systems that can 
-                understand and adapt to their human teammates. This project incorporates objective 
-                metrics to determine the performance patterns of the human teammates (i.e., workload) 
-                in real-time, predict near term human performance and use this information to adapt 
-                the machines' interactions with the human teammates or (re-)allocate tasks among 
-                the team members in order to improve the individual teammate's or overall team's 
-                performance when completing tasks.
-              </p>
-              <p>
-                The work relies on using objective metrics (i.e., heart rate variability, speech rate, 
-                noise level) to assess performance. The current state of the art algorithm requires 
-                known tasks, but future efforts will focus on incorporating real-time task identification.
-              </p>
-              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
-                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> DARPA/NASA, AFOSR
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Past Projects -->
-    <section class="section" style="background: var(--color-bg-secondary);">
-      <div class="container">
-        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Past Research</h2>
-        <div class="grid grid-2" style="max-width: 1200px; margin: 0 auto;">
-          <div class="card">
-            <h3 class="card-title">Learning Trait Preferences for Task Allocation</h3>
-            <div class="card-content">
-              <p>
-                I develop algorithms to extract the underlying preferences from expert demonstrations. 
-                I then use these inferred preferences to make multi-robot task allocation more effective.
-              </p>
-              <p style="margin-top: var(--spacing-sm);">
-                <a href="https://star-lab.cc.gatech.edu/papers/mallampati_trait-preference/" 
-                   style="color: var(--color-accent-primary);" target="_blank" rel="noopener noreferrer">
-                  <ion-icon name="document-text-outline" style="vertical-align: middle;"></ion-icon>
-                  Workshop Paper
-                </a>
-              </p>
-              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
-                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> ARL
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Decentralized MRTA accounting for Trainability of Agents</h3>
-            <div class="card-content">
-              <p>
-                I am improving the existing decentralized MRTA method by adding a feature to incorporate 
-                the feedback on agent trainability from the coalition level.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">User Study Setup</h3>
-            <div class="card-content">
-              <p>
-                I am helping set up a StarCraft II user study to collect demonstrations for learning 
-                a gaussian process that will be used to improve the performance of task allocation.
-              </p>
-              <p style="margin-top: var(--spacing-md); padding-top: var(--spacing-md); border-top: 1px solid var(--color-border);">
-                <strong style="color: var(--color-accent-primary);">Sponsors:</strong> ARL
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3 class="card-title">Personalized Pose Detection</h3>
-            <div class="card-content">
-              <p>
-                I am extending existing algorithms to include a component that learns a personalized 
-                embedding for distinguishing heterogeneity from person-to-person differences for pose prediction.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section class="section">
-      <div class="container">
-        <h2 style="margin-bottom: var(--spacing-xl); text-align: center;">Publications</h2>
-        <div style="max-width: 900px; margin: 0 auto;">
-          <!-- Workshop Papers -->
-          <div style="margin-bottom: var(--spacing-xl);">
-            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
-              Workshop Papers
-            </h3>
-            <div class="card" style="margin-bottom: var(--spacing-md);">
-              <h4 style="margin-bottom: var(--spacing-sm);">Learning Trait Preferences for Task Allocation</h4>
-              <p style="margin-bottom: var(--spacing-sm); color: var(--color-text-secondary);">
-                <strong>Vivek Mallampati</strong> and Harish Ravichandar
-              </p>
-              <p style="margin-bottom: var(--spacing-md); font-size: var(--font-size-sm); color: var(--color-text-muted);">
-                Workshop Paper
-              </p>
-              <div style="display: flex; gap: var(--spacing-md); flex-wrap: wrap;">
-                <a href="https://star-lab.cc.gatech.edu/papers/mallampati_trait-preference/" 
-                   class="btn btn-outline" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   style="font-size: var(--font-size-sm);">
-                  <ion-icon name="document-text-outline"></ion-icon>
-                  Paper
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Journal Papers (Placeholder) -->
-          <div style="margin-bottom: var(--spacing-xl);">
-            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
-              Journal Papers
-            </h3>
-            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
-              <p class="text-muted">Journal publications will be listed here as they are published.</p>
-            </div>
-          </div>
-
-          <!-- Conference Papers (Placeholder) -->
-          <div style="margin-bottom: var(--spacing-xl);">
-            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
-              Conference Papers
-            </h3>
-            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
-              <p class="text-muted">Conference papers will be listed here as they are published.</p>
-            </div>
-          </div>
-
-          <!-- Preprints (Placeholder) -->
+    <section class="block">
+      <h2>Earlier</h2>
+      <p class="note">Georgia Tech, STAR Lab, with Harish Ravichandar. 2021–2023.</p>
+      <ol class="works">
+        <li>
+          <p class="year">2023</p>
           <div>
-            <h3 style="margin-bottom: var(--spacing-lg); border-bottom: 2px solid var(--color-accent-primary); padding-bottom: var(--spacing-sm);">
-              Preprints
-            </h3>
-            <div class="card" style="text-align: center; padding: var(--spacing-xl);">
-              <p class="text-muted">Preprints will be listed here as they become available.</p>
-            </div>
+            <h3>Trait preferences</h3>
+            <p>I developed a method that reads task-specific trait preferences out of expert allocation demonstrations, including how diverse each trait already was in the team, and then allocates robots using those preferences. Sponsored by ARL.</p>
+            <p class="links"><a href="#mallampati-aamas-2023">AAMAS extended abstract</a></p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <p class="year">2023</p>
+          <div>
+            <h3>Unknown task rewards</h3>
+            <p>With Sukriti Singh, Anusha Srikanthan, and Harish Ravichandar, I worked on forming coalitions when task rewards are unknown and the team’s resources are limited. The algorithm trades off exploring those rewards against exploiting what it has already learned.</p>
+            <p class="links"><a href="#singh-rss-2023">RSS 2023</a></p>
+          </div>
+        </li>
+        <li>
+          <p class="year">2021–23</p>
+          <div>
+            <h3>Trainability in decentralized allocation</h3>
+            <p>I worked on a decentralized multi-robot task allocation method so that feedback about how trainable an agent is, measured at the coalition, could change the allocation.</p>
+          </div>
+        </li>
+        <li>
+          <p class="year">2021–23</p>
+          <div>
+            <h3>StarCraft II demonstrations</h3>
+            <p>I helped set up a StarCraft II study to collect demonstrations for a Gaussian process used to improve task allocation. Sponsored by ARL.</p>
+          </div>
+        </li>
+        <li>
+          <p class="year">2021–23</p>
+          <div>
+            <h3>Personalized pose detection</h3>
+            <p>I worked on a personalized embedding for pose prediction, meant to separate differences between people from other kinds of heterogeneity.</p>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <!-- Research Interests -->
-    <section class="section" style="background: var(--color-bg-secondary);">
-      <div class="container">
-        <div class="card" style="max-width: 800px; margin: 0 auto; text-align: center;">
-          <h2 style="margin-bottom: var(--spacing-md);">Research Focus Areas</h2>
-          <div class="grid grid-2" style="gap: var(--spacing-md); text-align: left;">
-            <div>
-              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
-                <ion-icon name="people-outline" style="vertical-align: middle;"></ion-icon>
-                Human-Machine Collaboration
-              </h4>
-              <p style="font-size: var(--font-size-sm);">
-                Developing systems that seamlessly integrate human and machine capabilities
-              </p>
-            </div>
-            <div>
-              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
-                <ion-icon name="git-branch-outline" style="vertical-align: middle;"></ion-icon>
-                Multi-Robot Systems
-              </h4>
-              <p style="font-size: var(--font-size-sm);">
-                Optimizing task allocation and team formation for robotic swarms
-              </p>
-            </div>
-            <div>
-              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
-                <ion-icon name="school-outline" style="vertical-align: middle;"></ion-icon>
-                Learning from Demonstrations
-              </h4>
-              <p style="font-size: var(--font-size-sm);">
-                Extracting preferences and policies from expert demonstrations
-              </p>
-            </div>
-            <div>
-              <h4 style="color: var(--color-accent-primary); margin-bottom: var(--spacing-xs);">
-                <ion-icon name="hardware-chip-outline" style="vertical-align: middle;"></ion-icon>
-                Robotic Middleware
-              </h4>
-              <p style="font-size: var(--font-size-sm);">
-                Building infrastructure for autonomous robotic systems
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <section class="block">
+      <h2>Publications</h2>
+      <ol class="pubs">
+        <li id="adams-arxiv-2024">
+          <p>Julie A. Adams, Christopher A. Sanchez, <strong>Vivek Mallampati</strong>, Joshua Bhagat Smith, Emily Burgess, and Andrew Dassonville. <span class="pub-title">OSU-Wing PIC Phase I Evaluation: Baseline Workload and Situation Awareness Results.</span> arXiv:2411.18750, 2024.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2411.18750">arXiv</a></p>
+        </li>
+        <li id="smith-hri-2024">
+          <p>Josh Bhagat Smith, <strong>Vivek Mallampati</strong>, Prakash Baskaran, Mark-Robin Giolando, and Julie A. Adams. <span class="pub-title">Design Principles for Building Robust Human-Robot Interaction Machine Learning Models.</span> Companion of the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1145/3610978.3640598">DOI</a>
+            <a href="https://jbs023.github.io/files/2024_hri_lbr_design.pdf">PDF</a>
+          </p>
+        </li>
+        <li id="singh-rss-2023">
+          <p>Sukriti Singh, Anusha Srikanthan, <strong>Vivek Mallampati</strong>, and Harish Ravichandar. <span class="pub-title">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation.</span> Robotics: Science and Systems (RSS), 2023. Also presented at the Workshop on Autonomous Robots and Multirobot Systems (ARMS), AAMAS 2023.</p>
+          <p class="pub-links">
+            <a href="https://roboticsproceedings.org/rss19/p108.html">Proceedings</a>
+            <a href="https://arxiv.org/abs/2305.15288">arXiv</a>
+          </p>
+        </li>
+        <li id="mallampati-aamas-2023">
+          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogeneous Teams.</span> Extended abstract, International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2023.</p>
+          <p class="pub-links">
+            <a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p2798.pdf">PDF</a>
+            <a href="https://arxiv.org/abs/2302.10817">arXiv</a>
+          </p>
+        </li>
+        <li id="mallampati-iros-2022">
+          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams.</span> Workshop on Human-Multi-Robot Systems, International Conference on Intelligent Robots and Systems (IROS), 2022.</p>
+          <p class="pub-links"><a href="https://star-lab.cc.gatech.edu/papers/mallampati-trait-preference/">Paper</a></p>
+        </li>
+      </ol>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-content">
-        &copy; 2025 Vivek Mallampati. All rights reserved.
-      </p>
-    </div>
+  <footer class="site-footer">
+    <span>© 2026 Vivek Mallampati</span>
+    <a href="mailto:mallampv@oregonstate.edu">mallampv@oregonstate.edu</a>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="./assets/js/main.js"></script>
 </body>
 </html>

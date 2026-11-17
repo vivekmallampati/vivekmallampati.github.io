@@ -1,182 +1,97 @@
 <!DOCTYPE html>
-<html lang="en" class="theme-blue">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivek Mallampati - PhD Robotics @ OSU</title>
-  
-  <!-- CSS -->
-  <link rel="stylesheet" href="./assets/css/main.css">
-  <link rel="stylesheet" href="./assets/css/navigation.css">
-  <link rel="stylesheet" href="./assets/css/responsive.css">
-  <link rel="stylesheet" href="./assets/css/themes.css">
-  
-  <!-- Google Fonts -->
+  <title>Vivek Mallampati — Robotics, Oregon State</title>
+  <meta name="description" content="Vivek Mallampati is a PhD student in robotics at Oregon State University. He studies adaptive human-machine teaming and multi-robot task allocation.">
+  <link rel="canonical" href="https://vivekmallampati.github.io/">
+  <meta property="og:title" content="Vivek Mallampati — Robotics, Oregon State">
+  <meta property="og:description" content="PhD student studying adaptive human-machine teaming and multi-robot task allocation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://vivekmallampati.github.io/">
+  <meta property="og:image" content="https://vivekmallampati.github.io/assets/images/portrait.png">
+  <meta name="theme-color" content="#f4f0e6">
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
-  <!-- Ion Icons -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-  <!-- Header Navigation -->
-  <header class="header" id="header">
-    <div class="header-container">
-      <a href="index.html" class="logo">
-        <img src="./assets/images/my-avatar.png" alt="Vivek Mallampati" class="logo-img">
-        <span>Vivek Mallampati</span>
-      </a>
-      
-      <nav>
-        <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="about.html" class="nav-link">About</a></li>
-          <li><a href="research.html" class="nav-link">Research</a></li>
-          <li><a href="projects.html" class="nav-link">Projects</a></li>
-          <li><a href="resume.html" class="nav-link">Resume</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">Vivek Mallampati</a>
+      <div class="nav-wrap">
+        <input class="menu-check" id="nav-toggle" type="checkbox">
+        <label class="menu-toggle" for="nav-toggle">Menu</label>
+        <nav class="nav" id="nav" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="about.html">About</a>
+        <a href="research.html">Research</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
       </nav>
+      </div>
     </div>
-    <div class="menu-overlay" id="menuOverlay"></div>
   </header>
 
-  <!-- Main Content -->
-  <main style="margin-top: var(--header-height);">
-    <!-- Hero Section -->
-    <section class="hero page-header-gradient">
-      <div class="hero-content">
-        <h1 class="hero-title">Vivek Mallampati</h1>
-        <p class="hero-subtitle">PhD Student in Robotics</p>
-        <p class="hero-description">
-          Graduate student at Oregon State University researching Adaptive Human-Machine Teaming 
-          and Multi-Robot Task Allocation. Passionate about developing intelligent systems that 
-          work seamlessly with humans.
+  <main id="main" class="page">
+    <section class="intro">
+      <div>
+        <p class="kicker">PhD student in Robotics</p>
+        <h1>Vivek Mallampati</h1>
+        <p class="lede">I study how a robot team can tell how its human teammate is doing, and change the work they share.</p>
+        <p class="facts">Oregon State University · Advised by <a href="https://engineering.oregonstate.edu/people/julie-adams">Dr. Julie Adams</a> · Human-Machine Teaming Laboratory · Corvallis, Oregon</p>
+        <p class="links">
+          <a href="mailto:mallampv@oregonstate.edu">mallampv@oregonstate.edu</a>
+          <a href="research.html">Research</a>
+          <a href="resume.html">Resume</a>
         </p>
-        <div class="hero-actions">
-          <a href="about.html" class="btn btn-primary">Learn More</a>
-          <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-        </div>
       </div>
+      <figure class="portrait">
+        <img src="./assets/images/portrait.png" alt="Portrait of Vivek Mallampati" width="800" height="1000">
+      </figure>
     </section>
 
-    <!-- About Preview Section -->
-    <section class="section">
-      <div class="container">
-        <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">About Me</h2>
-        <div class="card" style="max-width: 800px; margin: 0 auto;">
-          <p>
-            Fall 2023, I started the Ph.D. in Robotics program at Oregon State University under 
-            the guidance of <a href="https://engineering.oregonstate.edu/people/julie-adams" 
-            style="color: var(--color-accent-primary);">Prof Julie Adams</a>.
-          </p>
-          <p>
-            I was a graduate student in the School of Interactive Computing at Georgia Tech, 
-            pursuing an MS in Robotics. I currently do research in three spaces in 
-            <a href="https://star-lab.cc.gatech.edu/" style="color: var(--color-accent-primary);">STAR Lab</a> 
-            with <a href="https://harishravichandar.com/" style="color: var(--color-accent-primary);">Prof Harish Ravichandar</a>.
-          </p>
-          <p>
-            I graduated from the University of Illinois Urbana-Champaign with a Bachelor's in 
-            Mathematics and Computer Science in May 2021. I am interested in working on continuing 
-            my work with learning algorithms as well as in developing middleware for autonomous 
-            robotic systems.
-          </p>
-          <div style="margin-top: var(--spacing-lg);">
-            <a href="about.html" class="btn btn-secondary">Read Full Bio</a>
+    <section class="block">
+      <h2>Selected work</h2>
+      <ol class="works">
+        <li>
+          <p class="year">2023–</p>
+          <div>
+            <h3>Adaptive human-machine teaming</h3>
+            <p>At Oregon State I work on systems that estimate a teammate’s workload from objective signals, including heart-rate variability, speech rate, and noise level, then adapt how machines allocate tasks. Sponsored by DARPA/NASA and AFOSR.</p>
           </div>
-        </div>
-      </div>
+        </li>
+        <li>
+          <p class="year">2023</p>
+          <div>
+            <h3>Trait preferences for task allocation</h3>
+            <p>With Harish Ravichandar, I inferred which agent traits matter for a task from expert demonstrations, and used those preferences to allocate heterogeneous robots. Published as an AAMAS extended abstract, following an IROS workshop paper.</p>
+          </div>
+        </li>
+        <li>
+          <p class="year">2023</p>
+          <div>
+            <h3>Unknown rewards in multi-robot teams</h3>
+            <p>With Sukriti Singh, Anusha Srikanthan, and Harish Ravichandar. Coalitions that optimize unknown task rewards while respecting a team’s resource limits. Robotics: Science and Systems.</p>
+          </div>
+        </li>
+      </ol>
     </section>
 
-    <!-- Featured Research Section -->
-    <section class="section" style="background: var(--color-bg-secondary);">
-      <div class="container">
-        <h2 class="text-center" style="margin-bottom: var(--spacing-xl);">Featured Research</h2>
-        <div class="grid grid-2">
-          <div class="card">
-            <h3 class="card-title">Adaptive Human-Machine Teaming</h3>
-            <p class="card-content">
-              Developing systems that understand and adapt to human teammates using objective 
-              metrics to assess performance in real-time and improve team effectiveness.
-            </p>
-            <p class="text-muted" style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">
-              <strong>Sponsors:</strong> DARPA/NASA, AFOSR
-            </p>
-            <a href="research.html" class="btn btn-outline" style="margin-top: var(--spacing-md);">
-              Learn More
-            </a>
-          </div>
-          
-          <div class="card">
-            <h3 class="card-title">Learning Trait Preferences</h3>
-            <p class="card-content">
-              Developing algorithms to extract underlying preferences from expert demonstrations 
-              for more effective multi-robot task allocation.
-            </p>
-            <p class="text-muted" style="font-size: var(--font-size-sm); margin-top: var(--spacing-sm);">
-              <strong>Sponsors:</strong> ARL
-            </p>
-            <a href="research.html" class="btn btn-outline" style="margin-top: var(--spacing-md);">
-              Learn More
-            </a>
-          </div>
-        </div>
-          <div class="text-center" style="margin-top: var(--spacing-xl);">
-          <a href="research.html" class="btn btn-primary">View Research</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section class="section">
-      <div class="container">
-        <div class="card" style="max-width: 600px; margin: 0 auto; text-align: center;">
-          <h2 style="margin-bottom: var(--spacing-md);">Let's Connect</h2>
-          <p style="margin-bottom: var(--spacing-lg);">
-            Interested in collaboration, research opportunities, or just want to chat about robotics? 
-            I'd love to hear from you!
-          </p>
-          <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary">Contact Me</a>
-          </div>
-          <div class="social-links" style="margin-top: var(--spacing-lg);">
-            <a href="https://www.linkedin.com/in/vivek-mallampati/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://www.facebook.com/vivekm2000/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-            <a href="https://www.instagram.com/mallampativivek/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a href="mailto:mallampv@oregonstate.edu" class="social-link" aria-label="Email">
-              <ion-icon name="mail-outline"></ion-icon>
-            </a>
-          </div>
-        </div>
-      </div>
+    <section class="block prose">
+      <h2>Now</h2>
+      <p>I am a PhD student in the <a href="https://research.engr.oregonstate.edu/hmtl/">Human-Machine Teaming Laboratory</a> at Oregon State, where I started in Fall 2023. Before that I completed an MS in Robotics at Georgia Tech in the <a href="https://star-lab.cc.gatech.edu/">STAR Lab</a>, and a BS in Mathematics and Computer Science at the University of Illinois Urbana-Champaign.</p>
+      <p class="links"><a href="about.html">Full biography</a></p>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-content">
-        &copy; 2025 Vivek Mallampati. All rights reserved.
-      </p>
-    </div>
+  <footer class="site-footer">
+    <span>© 2026 Vivek Mallampati</span>
+    <a href="mailto:mallampv@oregonstate.edu">mallampv@oregonstate.edu</a>
   </footer>
-
-  <!-- JavaScript -->
-  <script src="./assets/js/main.js"></script>
 </body>
 </html>
