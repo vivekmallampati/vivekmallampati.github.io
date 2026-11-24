@@ -4,47 +4,49 @@
   <meta charset="UTF-8">
   <title>Vivek Mallampati — CV</title>
   <style>
-    @page { size: letter; margin: 0.55in 0.65in; }
-    body { margin: 0; color: #1b1916; font: 10.5pt/1.35 Georgia, "Times New Roman", serif; }
-    h1 { font-size: 20pt; font-weight: 500; margin: 0 0 2px; letter-spacing: -0.02em; }
-    h2 { font-size: 11.5pt; font-weight: 500; margin: 11px 0 3px; border-bottom: 1px solid #cfc6b8; }
-    p { margin: 0 0 3px; }
+    @page { size: letter; margin: 0.5in 0.62in; }
+    body { margin: 0; color: #1b1916; font: 10pt/1.32 Georgia, "Times New Roman", serif; }
+    h1 { font-size: 18pt; font-weight: 500; margin: 0 0 2px; letter-spacing: -0.02em; }
+    h2 { font-size: 11pt; font-weight: 500; margin: 9px 0 2px; border-bottom: 1px solid #cfc6b8; }
+    p { margin: 0 0 2px; }
     a { color: #1b1916; text-decoration: none; }
-    .meta { color: #3d3832; margin-bottom: 8px; }
-    .item { margin: 0 0 4px; }
-    .role { font-weight: 500; }
+    .meta { color: #3d3832; margin-bottom: 6px; }
+    .item { margin: 0 0 3px; }
     ul { margin: 0; padding-left: 1.1em; }
-    li { margin: 0 0 2px; }
+    li { margin: 0 0 1px; }
   </style>
 </head>
 <body>
   <h1>Vivek Mallampati</h1>
-  <p class="meta">PhD candidate, Robotics, Oregon State University · graduating December 2027<br>
+  <p class="meta">PhD candidate, Robotics and AI, Oregon State University · graduating December 2027<br>
   mallampv@oregonstate.edu · Corvallis, Oregon · vivekmallampati.github.io</p>
 
   <h2>Education</h2>
-  <p class="item"><span class="role">Oregon State University</span> — PhD in Robotics, advised by Julie Adams. Sep 2023–Dec 2027 (expected).</p>
-  <p class="item"><span class="role">Georgia Institute of Technology</span> — MS in Robotics, advised by Harish Ravichandar. GPA 4.0/4.0. 2021–2023.</p>
-  <p class="item"><span class="role">University of Illinois Urbana-Champaign</span> — BS in Mathematics and Computer Science. GPA 3.75/4.0. 2017–2021.</p>
+  <p class="item"><b>Oregon State University</b> — PhD in Robotics and AI, advised by Julie A. Adams. Sep 2023–Dec 2027 (expected).</p>
+  <p class="item"><b>Georgia Institute of Technology</b> — MS in Robotics, advised by Harish Ravichandar. GPA 4.0/4.0. 2021–2023.</p>
+  <p class="item"><b>University of Illinois Urbana-Champaign</b> — BS in Mathematics and Computer Science, high distinction. GPA 3.75/4.0. 2017–2021.</p>
 
   <h2>Research</h2>
-  <p class="item">Current member of the Human-Machine Teaming Laboratory. The team studies how many uncrewed aircraft one remote pilot can supervise, including a wildland-fire setup with a flight simulator and a remote-pilot interface.</p>
-  <p class="item">Earlier, at Georgia Tech: first-author work inferring which agent traits matter from expert allocations, and a coauthored Robotics: Science and Systems paper on allocating robots when task rewards are unknown.</p>
+  <p class="item"><b>Human-Machine Teaming Laboratory, Oregon State, 2023–present.</b> I did not build the remote-pilot interface. I design and run the human-subject studies on it, including wildland fire, for one pilot supervising many uncrewed aircraft beyond visual line of sight. I built the real-time physiological processing, the machine-learning models, and the IMPRINT Pro workload models.</p>
+  <p class="item">The published model moved predicted pilot workload from 77.8 to 91.8 as the delivery fleet grew. Unexpected events moved it further. Cognitive and visual demand, not aircraft count, drove the change (HFES 2025). The wildfire study is in review at Human Factors.</p>
+  <p class="item"><b>STAR Lab, Georgia Tech, 2021–2023.</b> First-author trait-preference learning for heterogeneous task allocation. Generated StarCraft II demonstrations to test a coalition-formation algorithm.</p>
+  <p class="item"><b>Intelligent Motion Lab, Illinois, 2020–2021,</b> with Kris Hauser. Built Jarvis, the manager for the TRINA nursing robot, and the robot’s spatial and temporal storage.</p>
 
   <h2>Selected papers</h2>
   <ul>
+    <li><b>Mallampati</b>, Hilbert, Dassonville, Sanchez, and Adams. m:N Ratio in Wildfire Response. In review, Human Factors, 2025.</li>
+    <li><b>Mallampati</b>, Bhagat Smith, Burgess, Sanchez, and Adams. Workload Modeling for 1:N UAS Delivery Operations. HFES Annual Meeting, 2025.</li>
     <li>Singh, Srikanthan, <b>Mallampati</b>, and Ravichandar. Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation. Robotics: Science and Systems, 2023.</li>
     <li>Bhagat Smith, <b>Mallampati</b>, Baskaran, Giolando, and Adams. Design Principles for Building Robust Human-Robot Interaction Machine Learning Models. HRI companion, 2024.</li>
     <li><b>Mallampati</b> and Ravichandar. Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogeneous Teams. Extended abstract, AAMAS, 2023.</li>
-    <li><b>Mallampati</b> and Ravichandar. Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams. Workshop, IROS, 2022.</li>
-    <li>Adams, Sanchez, <b>Mallampati</b>, Bhagat Smith, Burgess, and Dassonville. OSU-Wing PIC Phase I Evaluation. Technical report, arXiv:2411.18750, 2024.</li>
   </ul>
 
-  <h2>Industry</h2>
-  <p class="item"><span class="role">Amazon Publisher Services</span>, SDE intern, summer 2020 (virtual). Migrated six datasets from Hadoop onto a micro-batch path and built validation so reports shipped with more complete, more recent data.</p>
-  <p class="item"><span class="role">Amazon Publisher Services</span>, SDE intern, summer 2019, Palo Alto. Moved more than half of the legacy reports onto an AWS loading path with retries. Migrated reports ran about twice as fast, with no failed loads.</p>
+  <h2>Industry and teaching</h2>
+  <p class="item"><b>Amazon Publisher Services</b>, SDE intern, summer 2020. Moved databases from Hadoop onto a micro-batch path and built validation so reports shipped faster and more complete.</p>
+  <p class="item"><b>Amazon Publisher Services</b>, SDE intern, summer 2019, Palo Alto. Moved half of the legacy reports onto an AWS loader. Those reports ran at twice the speed, with no failed loads.</p>
+  <p class="item"><b>Teaching assistant</b>, CS 3630, Georgia Tech, 2022–2023. Wrote the HMM and MDP assignments and the autograder. Course assistant, CS 125, Illinois, spring 2018.</p>
 
-  <h2>Teaching</h2>
-  <p class="item">Teaching assistant, CS 3630 Introduction to Perception and Robotics, Georgia Tech, Jan 2022–May 2023. Wrote the HMM and MDP assignments and the autograder. Course assistant, CS 125, Illinois, spring 2018.</p>
+  <h2>Skills</h2>
+  <p>Python, C++, Java, C, Scala, JavaScript. ROS, IMPRINT Pro, PyTorch, TensorFlow, Robotarium, Klampt, Hadoop, Spark, AWS, Git.</p>
 </body>
 </html>

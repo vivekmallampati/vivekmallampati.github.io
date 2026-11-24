@@ -47,13 +47,9 @@
     <section class="block prose">
       <h2>Current</h2>
       <h3>Supervising multiple uncrewed aircraft</h3>
-      <p>I am a PhD candidate in the <a href="https://research.engr.oregonstate.edu/hmtl/">Human-Machine Teaming Laboratory</a>, advised by <a href="https://engineering.oregonstate.edu/people/julie-adams">Julie Adams</a>. With Christopher Sanchez, the lab asks how many uncrewed aircraft one remote pilot can be responsible for in a high-stakes setting. The case in front of the team now is wildland fire: large aircraft supporting the fire, a flight simulator, and a remote-pilot interface. I am on the current team, with Alejandra Hilbert and Atharv Marathe. Andrew Dassonville built the pilot interface and the experimental systems.</p>
-      <p><a href="https://www.instagram.com/p/DMx58Qvht1g/">Oregon State Engineering posted the setup.</a></p>
-      <p>The published baseline is a different interface, Wing’s delivery display. I am a coauthor on that technical report. Pilots stayed in a normal workload range and kept good situation awareness as the number of aircraft and nests changed. The open measurement problem, across this line of work, is estimating workload from objective signals such as heart-rate variability, speech rate, and noise level while the task is still underway. Sponsors of the adaptive teaming work include DARPA/NASA and AFOSR.</p>
-      <p class="links">
-        <a href="https://arxiv.org/abs/2411.18750">Wing baseline report</a>
-        <a href="https://doi.org/10.1145/3610978.3640598">HRI 2024 companion, design principles for the models</a>
-      </p>
+      <p>I am a PhD candidate in Robotics and AI in the <a href="https://research.engr.oregonstate.edu/hmtl/">Human-Machine Teaming Laboratory</a>, advised by <a href="https://engineering.oregonstate.edu/people/julie-adams">Julie Adams</a>. Andrew Dassonville built the remote-pilot interface. I did not. I design and run the human-subject studies on that interface, with Christopher Sanchez, to set performance bounds for one pilot supervising many uncrewed aircraft beyond visual line of sight. The wildland-fire case is the current study. I also built the real-time physiological signal processing, the machine-learning models, and the IMPRINT Pro workload models, and I program the autonomous robots used in the work.</p>
+      <p>The wildfire study is first-author, in review at Human Factors, with Alejandra Hilbert, Andrew Dassonville, Christopher Sanchez, and Julie Adams. <a href="https://www.instagram.com/p/DMx58Qvht1g/">Oregon State Engineering posted the interface.</a></p>
+      <p>The published model is <a href="https://doi.org/10.1177/10711813251370746">Workload Modeling for 1:N UAS Delivery Operations</a>, HFES 2025, first author. In IMPRINT Pro, predicted pilot workload moved from 77.8 to 91.8 as the delivery fleet grew from the low condition to the high one. Every condition was already in overload, above 60. Unexpected events, especially two detect-and-avoid encounters, raised workload more than adding aircraft did. Cognitive and visual demand drove the change. Motor and speech demand stayed small. Sponsors of the adaptive teaming work include DARPA/NASA and AFOSR.</p>
     </section>
 
     <section class="block">
@@ -72,19 +68,26 @@
           <p class="year">2023</p>
           <div>
             <h3>Unknown task rewards</h3>
-            <p>Coauthor. When the reward of each task is unknown and the robots are limited, the algorithm has to try new coalitions without abandoning ones that already work.</p>
+            <p>Coauthor. I generated StarCraft II demonstrations to test the coalition-formation algorithm, which uses concurrent multi-task bandits when task rewards are unknown and the robots are limited.</p>
             <p class="links"><a href="https://roboticsproceedings.org/rss19/p108.html">RSS 2023</a></p>
           </div>
         </li>
       </ol>
-      <p class="note">Also at Georgia Tech: trainability feedback inside decentralized allocation, a StarCraft II demonstration study for a Gaussian-process allocator, and a personalized embedding for pose prediction. Those did not become papers.</p>
+      <p class="note">Also at Georgia Tech, without a paper: trainability feedback inside decentralized allocation, and a personalized embedding for pose prediction.</p>
     </section>
 
     <section class="block">
       <h2>Publications</h2>
       <ol class="pubs">
+        <li id="mallampati-hf-2025">
+          <p><strong>Vivek Mallampati</strong>, Alejandra Hilbert, Andrew Dassonville, Christopher A. Sanchez, and Julie A. Adams. <span class="pub-title">m:N Ratio in Wildfire Response.</span> In review, Human Factors, 2025.</p>
+        </li>
+        <li id="mallampati-hfes-2025">
+          <p><strong>Vivek Mallampati</strong>, Josh Bhagat Smith, Emily Burgess, Christopher A. Sanchez, and Julie A. Adams. <span class="pub-title">Workload Modeling for 1:N UAS Delivery Operations.</span> Proceedings of the Human Factors and Ergonomics Society Annual Meeting, 2025.</p>
+          <p class="pub-links"><a href="https://doi.org/10.1177/10711813251370746">DOI</a></p>
+        </li>
         <li id="singh-rss-2023">
-          <p>Sukriti Singh, Anusha Srikanthan, <strong>Vivek Mallampati</strong>, and Harish Ravichandar. <span class="pub-title">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation.</span> Robotics: Science and Systems (RSS), 2023. Also presented at the ARMS workshop, AAMAS 2023.</p>
+          <p>Sukriti Singh, Anusha Srikanthan, <strong>Vivek Mallampati</strong>, and Harish Ravichandar. <span class="pub-title">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation.</span> Robotics: Science and Systems (RSS), 2023.</p>
           <p class="pub-links">
             <a href="https://roboticsproceedings.org/rss19/p108.html">Proceedings</a>
             <a href="https://arxiv.org/abs/2305.15288">arXiv</a>
@@ -97,6 +100,9 @@
             <a href="https://jbs023.github.io/files/2024_hri_lbr_design.pdf">PDF</a>
           </p>
         </li>
+        <li>
+          <p>Josh Bhagat Smith, Mark-Robin Giolando, <strong>Vivek Mallampati</strong>, Prakash Baskaran, and Julie A. Adams. <span class="pub-title">Experimental Design Principles for Developing Machine Learning Models for Human–Robot Interaction.</span> Discovering the Frontiers of Human-Robot Interaction, Springer, pp. 335–361, 2024.</p>
+        </li>
         <li id="mallampati-aamas-2023">
           <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogeneous Teams.</span> Extended abstract, AAMAS, 2023.</p>
           <p class="pub-links">
@@ -105,7 +111,7 @@
           </p>
         </li>
         <li id="mallampati-iros-2022">
-          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams.</span> Workshop on Human-Multi-Robot Systems, IROS, 2022.</p>
+          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams.</span> Workshop on Human-Multi-Robot Systems, IROS, 2022. Spotlight presentation.</p>
           <p class="pub-links"><a href="https://star-lab.cc.gatech.edu/papers/mallampati-trait-preference/">Paper</a></p>
         </li>
         <li id="adams-arxiv-2024">
