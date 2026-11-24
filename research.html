@@ -4,13 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Research — Vivek Mallampati</title>
-  <meta name="description" content="Research and publications by Vivek Mallampati on adaptive human-machine teaming and multi-robot task allocation.">
+  <meta name="description" content="Vivek Mallampati studies human supervision of multiple uncrewed aircraft and multi-robot task allocation.">
   <link rel="canonical" href="https://vivekmallampati.github.io/research.html">
   <meta property="og:title" content="Research — Vivek Mallampati">
-  <meta property="og:description" content="Adaptive human-machine teaming, multi-robot task allocation, and publications.">
+  <meta property="og:description" content="One remote pilot and many uncrewed aircraft, plus multi-robot task allocation.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://vivekmallampati.github.io/research.html">
-  <meta property="og:image" content="https://vivekmallampati.github.io/assets/images/portrait.png">
+  <meta property="og:image" content="https://vivekmallampati.github.io/assets/images/portrait.jpg">
   <meta name="theme-color" content="#f4f0e6">
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,15 +41,19 @@
     <header class="prose">
       <p class="kicker">Research</p>
       <h1>Research</h1>
-      <p class="lede">Adaptive human-machine teaming, and how heterogeneous robots should split a task.</p>
+      <p class="lede">How many aircraft one person can supervise, and how a robot team should split a task.</p>
     </header>
 
     <section class="block prose">
       <h2>Current</h2>
-      <h3>Adaptive human-machine teaming</h3>
-      <p>A machine teammate has to notice when a person is overloaded and change what it does. This project uses objective measures — heart-rate variability, speech rate, noise level — to estimate workload as the task is happening, predict performance in the near term, and then adapt the machine’s interaction or reallocate tasks across the team.</p>
-      <p>The current algorithms assume the task is known. The next step is to identify the task while it is underway. Sponsors: DARPA/NASA and AFOSR.</p>
-      <p>Related paper: <a href="https://doi.org/10.1145/3610978.3640598">Design Principles for Building Robust Human-Robot Interaction Machine Learning Models</a>, HRI 2024 companion, with Josh Bhagat Smith, Prakash Baskaran, Mark-Robin Giolando, and Julie A. Adams.</p>
+      <h3>Supervising multiple uncrewed aircraft</h3>
+      <p>I am a PhD candidate in the <a href="https://research.engr.oregonstate.edu/hmtl/">Human-Machine Teaming Laboratory</a>, advised by <a href="https://engineering.oregonstate.edu/people/julie-adams">Julie Adams</a>. With Christopher Sanchez, the lab asks how many uncrewed aircraft one remote pilot can be responsible for in a high-stakes setting. The case in front of the team now is wildland fire: large aircraft supporting the fire, a flight simulator, and a remote-pilot interface. I am on the current team, with Alejandra Hilbert and Atharv Marathe. Andrew Dassonville built the pilot interface and the experimental systems.</p>
+      <p><a href="https://www.instagram.com/p/DMx58Qvht1g/">Oregon State Engineering posted the setup.</a></p>
+      <p>The published baseline is a different interface, Wing’s delivery display. I am a coauthor on that technical report. Pilots stayed in a normal workload range and kept good situation awareness as the number of aircraft and nests changed. The open measurement problem, across this line of work, is estimating workload from objective signals such as heart-rate variability, speech rate, and noise level while the task is still underway. Sponsors of the adaptive teaming work include DARPA/NASA and AFOSR.</p>
+      <p class="links">
+        <a href="https://arxiv.org/abs/2411.18750">Wing baseline report</a>
+        <a href="https://doi.org/10.1145/3610978.3640598">HRI 2024 companion, design principles for the models</a>
+      </p>
     </section>
 
     <section class="block">
@@ -60,48 +64,31 @@
           <p class="year">2023</p>
           <div>
             <h3>Trait preferences</h3>
-            <p>I developed a method that reads task-specific trait preferences out of expert allocation demonstrations, including how diverse each trait already was in the team, and then allocates robots using those preferences. Sponsored by ARL.</p>
-            <p class="links"><a href="#mallampati-aamas-2023">AAMAS extended abstract</a></p>
+            <p>First author. Expert demonstrations show which traits matter because the expert assigns the important ones consistently. Using those preferences made allocation more effective than treating every trait as equal, and let the optimizer drop traits. Sponsored by ARL.</p>
+            <p class="links"><a href="https://arxiv.org/abs/2302.10817">AAMAS extended abstract</a></p>
           </div>
         </li>
         <li>
           <p class="year">2023</p>
           <div>
             <h3>Unknown task rewards</h3>
-            <p>With Sukriti Singh, Anusha Srikanthan, and Harish Ravichandar, I worked on forming coalitions when task rewards are unknown and the team’s resources are limited. The algorithm trades off exploring those rewards against exploiting what it has already learned.</p>
-            <p class="links"><a href="#singh-rss-2023">RSS 2023</a></p>
-          </div>
-        </li>
-        <li>
-          <p class="year">2021–23</p>
-          <div>
-            <h3>Trainability in decentralized allocation</h3>
-            <p>I worked on a decentralized multi-robot task allocation method so that feedback about how trainable an agent is, measured at the coalition, could change the allocation.</p>
-          </div>
-        </li>
-        <li>
-          <p class="year">2021–23</p>
-          <div>
-            <h3>StarCraft II demonstrations</h3>
-            <p>I helped set up a StarCraft II study to collect demonstrations for a Gaussian process used to improve task allocation. Sponsored by ARL.</p>
-          </div>
-        </li>
-        <li>
-          <p class="year">2021–23</p>
-          <div>
-            <h3>Personalized pose detection</h3>
-            <p>I worked on a personalized embedding for pose prediction, meant to separate differences between people from other kinds of heterogeneity.</p>
+            <p>Coauthor. When the reward of each task is unknown and the robots are limited, the algorithm has to try new coalitions without abandoning ones that already work.</p>
+            <p class="links"><a href="https://roboticsproceedings.org/rss19/p108.html">RSS 2023</a></p>
           </div>
         </li>
       </ol>
+      <p class="note">Also at Georgia Tech: trainability feedback inside decentralized allocation, a StarCraft II demonstration study for a Gaussian-process allocator, and a personalized embedding for pose prediction. Those did not become papers.</p>
     </section>
 
     <section class="block">
       <h2>Publications</h2>
       <ol class="pubs">
-        <li id="adams-arxiv-2024">
-          <p>Julie A. Adams, Christopher A. Sanchez, <strong>Vivek Mallampati</strong>, Joshua Bhagat Smith, Emily Burgess, and Andrew Dassonville. <span class="pub-title">OSU-Wing PIC Phase I Evaluation: Baseline Workload and Situation Awareness Results.</span> arXiv:2411.18750, 2024.</p>
-          <p class="pub-links"><a href="https://arxiv.org/abs/2411.18750">arXiv</a></p>
+        <li id="singh-rss-2023">
+          <p>Sukriti Singh, Anusha Srikanthan, <strong>Vivek Mallampati</strong>, and Harish Ravichandar. <span class="pub-title">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation.</span> Robotics: Science and Systems (RSS), 2023. Also presented at the ARMS workshop, AAMAS 2023.</p>
+          <p class="pub-links">
+            <a href="https://roboticsproceedings.org/rss19/p108.html">Proceedings</a>
+            <a href="https://arxiv.org/abs/2305.15288">arXiv</a>
+          </p>
         </li>
         <li id="smith-hri-2024">
           <p>Josh Bhagat Smith, <strong>Vivek Mallampati</strong>, Prakash Baskaran, Mark-Robin Giolando, and Julie A. Adams. <span class="pub-title">Design Principles for Building Robust Human-Robot Interaction Machine Learning Models.</span> Companion of the ACM/IEEE International Conference on Human-Robot Interaction (HRI), 2024.</p>
@@ -110,23 +97,20 @@
             <a href="https://jbs023.github.io/files/2024_hri_lbr_design.pdf">PDF</a>
           </p>
         </li>
-        <li id="singh-rss-2023">
-          <p>Sukriti Singh, Anusha Srikanthan, <strong>Vivek Mallampati</strong>, and Harish Ravichandar. <span class="pub-title">Concurrent Constrained Optimization of Unknown Rewards for Multi-Robot Task Allocation.</span> Robotics: Science and Systems (RSS), 2023. Also presented at the Workshop on Autonomous Robots and Multirobot Systems (ARMS), AAMAS 2023.</p>
-          <p class="pub-links">
-            <a href="https://roboticsproceedings.org/rss19/p108.html">Proceedings</a>
-            <a href="https://arxiv.org/abs/2305.15288">arXiv</a>
-          </p>
-        </li>
         <li id="mallampati-aamas-2023">
-          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogeneous Teams.</span> Extended abstract, International Conference on Autonomous Agents and Multiagent Systems (AAMAS), 2023.</p>
+          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Inferring Implicit Trait Preferences from Demonstrations of Task Allocation in Heterogeneous Teams.</span> Extended abstract, AAMAS, 2023.</p>
           <p class="pub-links">
             <a href="https://www.ifaamas.org/Proceedings/aamas2023/pdfs/p2798.pdf">PDF</a>
             <a href="https://arxiv.org/abs/2302.10817">arXiv</a>
           </p>
         </li>
         <li id="mallampati-iros-2022">
-          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams.</span> Workshop on Human-Multi-Robot Systems, International Conference on Intelligent Robots and Systems (IROS), 2022.</p>
+          <p><strong>Vivek Mallampati</strong> and Harish Ravichandar. <span class="pub-title">Learning Trait Preferences for Task Allocation in Heterogeneous Multi-Agent Teams.</span> Workshop on Human-Multi-Robot Systems, IROS, 2022.</p>
           <p class="pub-links"><a href="https://star-lab.cc.gatech.edu/papers/mallampati-trait-preference/">Paper</a></p>
+        </li>
+        <li id="adams-arxiv-2024">
+          <p>Julie A. Adams, Christopher A. Sanchez, <strong>Vivek Mallampati</strong>, Joshua Bhagat Smith, Emily Burgess, and Andrew Dassonville. <span class="pub-title">OSU-Wing PIC Phase I Evaluation: Baseline Workload and Situation Awareness Results.</span> Technical report, arXiv:2411.18750, 2024.</p>
+          <p class="pub-links"><a href="https://arxiv.org/abs/2411.18750">arXiv</a></p>
         </li>
       </ol>
     </section>

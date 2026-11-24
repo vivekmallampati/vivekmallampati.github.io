@@ -11,7 +11,7 @@ Personal academic site. Static HTML, CSS, and a short menu script, hosted on Git
 - `contact.html` — email and profile links
 - `projects.html` — redirects to the research page
 
-There is no PDF resume in the repository. The resume page is the current CV. Contact is the email address `mallampv@oregonstate.edu`. A form can be added later once a real Formspree form id exists.
+`assets/cv/Vivek_Mallampati_CV.pdf` is the one-page CV. Contact is `mallampv@oregonstate.edu`. Graduation on the site is December 2027.
 
 ## Custom domain
 
